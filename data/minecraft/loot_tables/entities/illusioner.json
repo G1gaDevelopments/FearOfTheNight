@@ -1,0 +1,23 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:phantom_membrane",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance_with_looting",
+                            "chance": 1,
+                            "looting_multiplier": 0.03
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
