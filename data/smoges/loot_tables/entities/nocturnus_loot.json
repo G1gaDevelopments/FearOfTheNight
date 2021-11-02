@@ -1,0 +1,58 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 2,
+        "bonus_rolls": {
+          "min": 0,
+          "max": 1
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:phantom_membrane",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 75,
+                  "max": 200
+                },
+                "add": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:paper",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Phantom Mount",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:10}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
