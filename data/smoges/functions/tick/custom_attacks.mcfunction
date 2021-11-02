@@ -21,3 +21,10 @@ execute as @e[tag=bb_fireball,scores={time=30}] as @s run kill @s
 execute as @e[tag=bb_minion,scores={time=200}] as @s run kill @s
 execute as @e[tag=nt_minion,scores={time=400}] as @s run kill @s
 execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
+
+# Assassin attacks
+execute as @e[tag=assassin,scores={time=200}] as @s run data merge entity @s {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:2s},{id:"minecraft:punch",lvl:1s},{id:"minecraft:infinity",lvl:1s}]}},{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:2s},{id:"minecraft:punch",lvl:1s},{id:"minecraft:infinity",lvl:1s}]}}]}
+execute as @e[tag=assassin,scores={time=400}] as @s run data merge entity @s {HandItems:[{id:"minecraft:iron_sword",Count:1b,tag:{display:{Name:'{"text":"Assassin\'s Sword","color":"yellow"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:10,Operation:2,UUID:[I;-1042273713,2144028759,-1814818672,-1513346913]}]}},{id:"minecraft:iron_sword",Count:1b,tag:{display:{Name:'{"text":"Assassin\'s Sword","color":"yellow"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:10,Operation:2,UUID:[I;-1042273713,2144028759,-1814818672,-1513346913]}]}}]}
+execute as @e[tag=assassin,scores={time=599}] as @s run tp @s ^ ^ ^5
+execute as @e[tag=assassin,scores={time=600}] as @s run scoreboard players set @s time 0
+#{id:"minecraft:iron_sword",Count:1b,tag:{display:{Name:'{"text":"Assassin\'s Sword","color":"yellow"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:10,Operation:2,UUID:[I;-1042273713,2144028759,-1814818672,-1513346913]}]}}
