@@ -1,5 +1,3 @@
-# Makes it rain obsidian.
-say obbyrain
-execute as @s[scores={nocturnus_atk=170..180}] run summon phantom ~ ~ ~ {Health:1f,Tags:["nt_obbyrain"],Attributes:[{Name:"generic.max_health",Base:1}]}
-execute as @s[scores={nocturnus_atk=141..160}] as @e[tag=nt_obbyrain] run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:obsidian"},Time:1,DropItem:0b,HurtEntities:1b}
-execute as @s[scores={nocturnus_atk=140}] as @e[tag=nt_obbyrain] run kill @s
+# Spawns mimics
+say mimics
+execute as @s[scores={nocturnus_atk=240..242}] run summon phantom ~ ~ ~ {Glowing:1b,CustomNameVisible:1b,PersistenceRequired:1b,Health:1f,Size:40,Tags:["nt_mimic"],CustomName:'{"text":"Nocturnus, Monstrosity of the Night","color":"dark_blue","bold":true}',ActiveEffects:[{Id:5b,Amplifier:3b,Duration:999999},{Id:10b,Amplifier:1b,Duration:999999},{Id:11b,Amplifier:1b,Duration:999999}],Attributes:[{Name:"generic.max_health",Base:1}]}

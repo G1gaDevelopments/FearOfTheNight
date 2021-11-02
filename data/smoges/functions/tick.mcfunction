@@ -1,7 +1,7 @@
 # Sub-functions for handling more precise stuffs
 function smoges:tick/mob_scan
 function smoges:tick/on_hurt
-execute as @e[tag=not_rotated,type=area_effect_cloud] at @s run function smoges:impl/nocturnus/raycasting_handler
+execute as @e[tag=!not_rotated,type=area_effect_cloud] at @s run function smoges:impl/nocturnus/raycasting_handler
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1
@@ -21,6 +21,7 @@ execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=0..40}] at @s if 
 execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=80}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk2
 execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=100..110}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk3
 execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=140..180}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk4
+execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=240..242}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk5
 
 # Nocturnus phase 2
 execute if entity @e[tag=nocturnus,type=phantom,limit=1,tag=!nt_phase2,nbt={Health:100f}] run effect give @s invisibility 999999 255
@@ -40,7 +41,8 @@ execute as @e[tag=bb_fireball,scores={time=30}] as @s run kill @s
 
 # Handles boss reinforcements.
 execute as @e[tag=bb_minion,scores={time=200}] as @s run kill @s
-execute as @e[tag=nt_minion,scores={time=500}] as @s run kill @s
+execute as @e[tag=nt_minion,scores={time=400}] as @s run kill @s
+execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
 
 # Increment bossbars
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health
@@ -50,3 +52,5 @@ execute unless entity @e[tag=nocturnus,type=phantom,limit=1] run bossbar set noc
 
 # Allows it to be daytime again once Nocturnus has been killed.
 execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true
+
+execute at @e[type=area_effect_cloud,tag=not_rotated] run particle soul_fire_flame ~ ~ ~ 0 0 0 0.00001 1
