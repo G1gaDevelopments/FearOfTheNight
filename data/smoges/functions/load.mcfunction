@@ -19,5 +19,5 @@ bossbar set nocturnus color blue
 
 
 say Smoges Pack by G1galovaniac
-say Version 1.0
-say Changelog: https://pastebin.com/3HL1ttzf
+say Version 1.1-BETA
+say Changelogs available on Github
