@@ -3,6 +3,7 @@ function smoges:tick/mob_scan
 function smoges:tick/on_hurt
 execute as @e[tag=!not_rotated,tag=nt_raycast,type=area_effect_cloud] at @s run function smoges:impl/nocturnus/raycasting_handler
 function smoges:tick/custom_attacks
+execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1
@@ -16,6 +17,12 @@ kill @e[type=phantom,tag=blazeborn,predicate=!smoges:is_blazeborn_mount]
 # Calms down angry bulls
 tp @e[type=husk,tag=angry_bull,scores={time=400}] 0 -6164 0
 tag @e[type=cow,tag=angry_bull,scores={time=400}] remove angry_bull
+
+# Display bossbars
+bossbar set blazeborn players @a
+bossbar set blazeborn max 150
+bossbar set nocturnus players @a
+bossbar set nocturnus max 300
 
 # Increment bossbars
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health

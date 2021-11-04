@@ -2,6 +2,4 @@ summon phantom ~ ~20 ~ {Silent:1b,Tags:["blazeborn"],Passengers:[{id:"minecraft:
 
 scoreboard players add @e[tag=blazeborn,type=wither_skeleton] blazeborn_atk 0
 
-bossbar set blazeborn players @a
-bossbar set blazeborn max 150
 execute if entity @e[tag=blazeborn,type=wither_skeleton,limit=1] run bossbar set blazeborn visible true
