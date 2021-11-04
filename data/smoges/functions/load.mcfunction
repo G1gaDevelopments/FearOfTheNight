@@ -3,6 +3,7 @@ scoreboard objectives add time dummy
 scoreboard objectives add blazeborn_atk dummy
 scoreboard objectives add nocturnus_atk dummy
 scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add botb_cooldown dummy
 
 # Fireball math. I hate this fuck you Timber Forge
 scoreboard objectives add FB_x1 dummy

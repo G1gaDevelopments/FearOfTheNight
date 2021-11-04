@@ -9,6 +9,7 @@ execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
 scoreboard players add @e[type=!#smoges:nonmob] time 1
 scoreboard players remove @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=1..}] blazeborn_atk 1
 scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1..}] nocturnus_atk 1
+scoreboard players remove @a botb_cooldown 1
 
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!smoges:is_riding_angry_bull]
