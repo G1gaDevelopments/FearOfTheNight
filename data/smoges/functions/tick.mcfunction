@@ -17,10 +17,6 @@ scoreboard players remove @a botb_cooldown 1
 kill @e[type=husk,tag=angry_bull,predicate=!smoges:is_riding_angry_bull]
 kill @e[type=phantom,tag=blazeborn,predicate=!smoges:is_blazeborn_mount]
 
-# Calms down angry bulls
-tp @e[type=husk,tag=angry_bull,scores={time=400}] 0 -6164 0
-tag @e[type=cow,tag=angry_bull,scores={time=400}] remove angry_bull
-
 # Display bossbars
 bossbar set blazeborn players @a
 bossbar set blazeborn max 150
