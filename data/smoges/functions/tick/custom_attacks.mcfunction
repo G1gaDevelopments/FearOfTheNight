@@ -24,7 +24,7 @@ execute as @e[tag=queen,type=stray,scores={queen_atk=0..5}] at @s if entity @e[t
 execute as @e[tag=queen,type=stray,scores={queen_atk=30..35}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk2
 execute as @e[tag=queen,type=stray,scores={queen_atk=60}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk3
 execute as @e[tag=queen,type=stray,scores={queen_atk=100..120}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk4
-execute as @e[tag=queen,type=stray,scores={queen_atk=150..170}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk5
+execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk5
 
 # Handles Elizabeth arrows.
 execute as @e[tag=qn_arrow, tag=!moving_ar] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/queen/arrow_motion
