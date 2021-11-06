@@ -2,6 +2,8 @@
 scoreboard objectives add time dummy
 scoreboard objectives add blazeborn_atk dummy
 scoreboard objectives add nocturnus_atk dummy
+scoreboard objectives add queen_atk dummy
+
 scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add botb_cooldown dummy
 
@@ -18,7 +20,8 @@ bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":tr
 bossbar set blazeborn color yellow
 bossbar add nocturnus {"text":"Nocturnus, Monstrosity of the Night","color":"dark_blue","bold":true}
 bossbar set nocturnus color blue
-
+bossbar add queen {"text":"Queen Elizabeth the Second","color":"green","bold":true}
+bossbar set queen color green
 
 say Smoges Pack by G1galovaniac
 say Version 1.1-BETA
