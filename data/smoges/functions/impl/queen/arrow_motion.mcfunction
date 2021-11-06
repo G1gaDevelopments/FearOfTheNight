@@ -23,7 +23,3 @@ tag @s add moving_ar
 execute store result entity @s Motion[0] double 0.1 run scoreboard players get @s AR_x2
 execute store result entity @s Motion[1] double 0.1 run scoreboard players get @s AR_y2
 execute store result entity @s Motion[2] double 0.1 run scoreboard players get @s AR_z2
-
-# execute store result entity @s power[0] double 0.1 run scoreboard players get @s AR_x2
-# execute store result entity @s power[1] double 0.1 run scoreboard players get @s AR_y2
-# execute store result entity @s power[2] double 0.1 run scoreboard players get @s AR_z2
