@@ -3,7 +3,7 @@
 		"minecraft:player",
 		"minecraft:area_effect_cloud",
 		"minecraft:armor_stand",
-		"minecraft:arrow",
+		
 		"minecraft:boat",
 		"minecraft:chest_minecart",
 		"minecraft:command_block_minecart",
@@ -16,7 +16,7 @@
         "minecraft:experience_orb",
         "minecraft:eye_of_ender",
         "minecraft:falling_block",
-        "minecraft:fireball",
+        
 		"minecraft:firework_rocket",
         "minecraft:fishing_bobber",
         "minecraft:furnace_minecart",
@@ -32,10 +32,10 @@
         "minecraft:minecart",
         "minecraft:painting",
         "minecraft:potion",
-        "minecraft:small_fireball",
+        
         "minecraft:snowball",
         "minecraft:spawner_minecart",
-        "minecraft:spectral_arrow",
+        
         "minecraft:tnt",
         "minecraft:tnt_minecart",
         "minecraft:trident",
