@@ -8,6 +8,7 @@ execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1
+scoreboard players add @e[type=#smoges:tick_despite_nonmob] time 1
 scoreboard players remove @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=1..}] blazeborn_atk 1
 scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1..}] nocturnus_atk 1
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
@@ -17,6 +18,7 @@ scoreboard players remove @a rgs_cooldown 1
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!smoges:is_riding_angry_bull]
 kill @e[type=phantom,tag=blazeborn,predicate=!smoges:is_blazeborn_mount]
+kill @e[type=ender_pearl,tag=thrown_ench_epearl,scores={time=50..}]
 
 # Display bossbars
 bossbar set blazeborn players @a

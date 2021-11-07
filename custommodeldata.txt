@@ -2,3 +2,5 @@
 (IRONSWD) 6164002 - Royal Rapier
 (PAPER)   6164002 - Phantom Mount (CHANGE THIS SOON)
 (COAS)    6164003 - Regal Sceptre
+(EPEARL)  6164004 - Enchanted Ender Pearl
+(PMEMB)   6164005 - Enchanted Phantom Membrane

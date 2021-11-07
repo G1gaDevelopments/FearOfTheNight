@@ -23,6 +23,17 @@ scoreboard objectives add AR_y2 dummy
 scoreboard objectives add AR_z1 dummy
 scoreboard objectives add AR_z2 dummy
 
+# Comparing UUIDS
+scoreboard objectives add uuid1o dummy
+scoreboard objectives add uuid2o dummy
+scoreboard objectives add uuid3o dummy
+scoreboard objectives add uuid4o dummy
+
+scoreboard objectives add uuid1t dummy
+scoreboard objectives add uuid2t dummy
+scoreboard objectives add uuid3t dummy
+scoreboard objectives add uuid4t dummy
+
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}
 bossbar set blazeborn color yellow
