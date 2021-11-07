@@ -6,6 +6,7 @@ scoreboard objectives add queen_atk dummy
 
 scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add botb_cooldown dummy
+scoreboard objectives add rgs_cooldown dummy
 
 # Projectile math. I hate this fuck you Timber Forge
 scoreboard objectives add FB_x1 dummy

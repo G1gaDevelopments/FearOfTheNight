@@ -12,6 +12,7 @@ scoreboard players remove @e[tag=blazeborn,type=wither_skeleton,scores={blazebor
 scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1..}] nocturnus_atk 1
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
 scoreboard players remove @a botb_cooldown 1
+scoreboard players remove @a rgs_cooldown 1
 
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!smoges:is_riding_angry_bull]
