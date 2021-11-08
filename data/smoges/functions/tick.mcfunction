@@ -42,7 +42,9 @@ execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true
 
 # Allows the sun to set on the British Empire again once Elizabeth has been killed, and fills everyone's Satchels.
 execute unless entity @e[tag=queen] run gamerule doDaylightCycle true
-execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]}] run scoreboard players set @s qst_uses 10
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run scoreboard players set @s qst_uses 10
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run tag @s add held_satchel
 
-# Action bar for Satchel
+# Action bar and refilling for Satchel
+execute as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] run function smoges:impl/queen_bag/refill
 execute as @e[type=player,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] at @s run title @s actionbar {"score":{"name":"@s","objective":"qst_uses"}}
