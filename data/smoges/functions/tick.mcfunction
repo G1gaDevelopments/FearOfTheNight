@@ -5,6 +5,7 @@ execute as @e[tag=!not_rotated,tag=nt_raycast,type=area_effect_cloud] at @s run 
 execute as @e[tag=!not_rotated,tag=qn_raycast,type=area_effect_cloud] at @s run function smoges:impl/queen/raycast_handler
 function smoges:tick/custom_attacks
 execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
+function smoges:tick/action_bars
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1
@@ -45,6 +46,7 @@ execute unless entity @e[tag=queen] run gamerule doDaylightCycle true
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run scoreboard players set @s qst_uses 10
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run tag @s add held_satchel
 
-# Action bar and refilling for Satchel
+# refilling for Satchel
 execute as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] run function smoges:impl/queen_bag/refill
-execute as @e[type=player,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] at @s run title @s actionbar {"score":{"name":"@s","objective":"qst_uses"}}
+
+# execute as @e[type=player,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] at @s run title @s actionbar {"score":{"name":"@s","objective":"qst_uses"}}
