@@ -6,3 +6,5 @@
 scoreboard players remove @s qst_uses 1
 effect give @s absorption 240 2
 effect give @s regeneration 10 3
+playsound item.totem.use player @a[distance=..5]
+particle totem_of_undying ~-1 ~ ~-1 ~1 ~ ~1 0.5 3

@@ -9,8 +9,9 @@ scoreboard objectives add botb_cooldown dummy
 scoreboard objectives add rgs_cooldown dummy
 scoreboard objectives add qst_cooldown dummy
 
+# Scoreboards for Queen's Satchel
 scoreboard objectives add qst_uses dummy
-scoreboard players set #-1 qst_uses -1
+scoreboard objectives add health health
 scoreboard players set @a qst_uses 10
 
 # Projectile math. I hate this fuck you Timber Forge
