@@ -13,6 +13,7 @@ scoreboard players add @e[type=#smoges:tick_despite_nonmob] time 1
 scoreboard players remove @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=1..}] blazeborn_atk 1
 scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1..}] nocturnus_atk 1
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
+scoreboard players remove @e[tag=leviathan,type=giant,scores={levi_atk=1..}] levi_atk 1
 scoreboard players remove @a botb_cooldown 1
 scoreboard players remove @a rgs_cooldown 1
 scoreboard players remove @a qst_cooldown 1
@@ -21,6 +22,7 @@ scoreboard players remove @a qst_cooldown 1
 kill @e[type=husk,tag=angry_bull,predicate=!smoges:is_riding_angry_bull]
 kill @e[type=phantom,tag=blazeborn,predicate=!smoges:is_blazeborn_mount]
 kill @e[type=ender_pearl,tag=thrown_ench_epearl,scores={time=50..}]
+kill @e[type=husk,tag=lv_rider,predicate=!smoges:is_leviathan_rider]
 
 # Display bossbars
 bossbar set blazeborn players @a
@@ -29,6 +31,8 @@ bossbar set nocturnus players @a
 bossbar set nocturnus max 300
 bossbar set queen players @a
 bossbar set queen max 130
+bossbar set leviathan players @a
+bossbar set leviathan max 400
 
 # Increment bossbars
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health
@@ -37,6 +41,8 @@ execute store result bossbar nocturnus value as @e[tag=nocturnus,type=phantom,li
 execute unless entity @e[tag=nocturnus,type=phantom,limit=1] run bossbar set nocturnus visible false
 execute store result bossbar queen value as @e[tag=queen,type=stray,limit=1] run data get entity @s Health
 execute unless entity @e[tag=queen,type=stray,limit=1] run bossbar set queen visible false
+execute store result bossbar leviathan value as @e[tag=leviathan,type=giant,limit=1] run data get entity @s Health
+execute unless entity @e[tag=leviathan,type=giant,limit=1] run bossbar set leviathan visible false
 
 # Allows it to be daytime again once Nocturnus has been killed.
 execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true

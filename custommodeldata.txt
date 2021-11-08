@@ -5,3 +5,4 @@
 (EPEARL)  6164004 - Enchanted Ender Pearl
 (PMEMB)   6164005 - Enchanted Phantom Membrane
 (COAS)    6164006 - Queen's Satchel
+(NETHSWD) 6164007 - Sabre of the Leviathan

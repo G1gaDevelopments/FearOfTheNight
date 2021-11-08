@@ -1,8 +1,9 @@
-# Scoreboards for things.
+# Ttimers.
 scoreboard objectives add time dummy
 scoreboard objectives add blazeborn_atk dummy
 scoreboard objectives add nocturnus_atk dummy
 scoreboard objectives add queen_atk dummy
+scoreboard objectives add levi_atk dummy
 
 scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add botb_cooldown dummy
@@ -12,7 +13,6 @@ scoreboard objectives add qst_cooldown dummy
 # Scoreboards for Queen's Satchel
 scoreboard objectives add qst_uses dummy
 scoreboard objectives add health health
-#scoreboard players set @a qst_uses 0
 
 # Projectile math. I hate this fuck you Timber Forge
 scoreboard objectives add FB_x1 dummy
@@ -47,6 +47,8 @@ bossbar add nocturnus {"text":"Nocturnus, Monstrosity of the Night","color":"dar
 bossbar set nocturnus color blue
 bossbar add queen {"text":"Queen Elizabeth the Second","color":"green","bold":true}
 bossbar set queen color green
+bossbar add leviathan {"text":"Leviathan","color":"dark_green","bold":true}
+bossbar set leviathan color green
 
 say Smoges Pack by G1galovaniac
 say Version 1.1-BETA

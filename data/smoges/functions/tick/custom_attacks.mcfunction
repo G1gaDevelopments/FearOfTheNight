@@ -1,4 +1,4 @@
-# MOBS
+# BOSSES
 
 # Blazeborn of the Depths' attacks
 execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=0}] at @s if entity @e[type=player,distance=0..30] run function smoges:impl/blazeborn/atk1
@@ -29,6 +29,21 @@ execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity 
 # Handles Elizabeth arrows.
 execute as @e[tag=qn_arrow, tag=!moving_ar] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/queen/arrow_motion
 execute as @e[tag=qn_arrow,scores={time=30}] as @s run kill @s
+
+# Leviathan's attacks
+execute as @e[type=giant,tag=leviathan,scores={levi_atk=0..11}] at @s if entity @e[type=player,distance=0..70] run function smoges:impl/leviathan/atk1
+execute as @e[type=giant,tag=leviathan,scores={levi_atk=100}] at @s if entity @e[type=player,distance=0..70] run function smoges:impl/leviathan/atk2
+execute as @e[type=giant,tag=leviathan,scores={levi_atk=150..180}] at @s if entity @e[type=player,distance=0..70] run function smoges:impl/leviathan/atk3
+
+# Handles Leviathan airstrikes
+execute as @e[type=armor_stand,tag=lv_airstrike] at @s run particle smoke ~ ~ ~ ~ ~ ~ 0.7 2
+execute as @e[type=armor_stand,tag=lv_airstrike] at @s run particle small_flame ~ ~ ~ ~ ~ ~ 0.7 2
+execute as @e[type=armor_stand,tag=lv_as_active] at @s run effect give @s slow_falling
+execute as @e[type=armor_stand,tag=lv_as_active,nbt={OnGround:1b}] run tag @s add lv_as_explode
+execute as @e[type=armor_stand,tag=lv_as_explode] at @s run summon creeper ~ ~ ~ {Fuse:0}
+kill @e[tag=lv_as_explode]
+
+# MOBS
 
 # Assassin attacks
 execute as @e[tag=assassin,scores={time=200}] as @s run data merge entity @s {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:2s},{id:"minecraft:punch",lvl:1s},{id:"minecraft:infinity",lvl:1s}]}},{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:2s},{id:"minecraft:punch",lvl:1s},{id:"minecraft:infinity",lvl:1s}]}}]}
