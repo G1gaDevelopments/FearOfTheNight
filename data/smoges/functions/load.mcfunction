@@ -51,5 +51,5 @@ bossbar add leviathan {"text":"Leviathan","color":"dark_green","bold":true}
 bossbar set leviathan color green
 
 say Smoges Pack by G1galovaniac
-say Version 1.1-BETA
+say Version 1.2-BETA
 say Changelogs available on Github
