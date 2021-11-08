@@ -10,5 +10,9 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomMod
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164003}}}] if entity @s[scores={rgs_cooldown=..0}] at @s at @e[type=!#smoges:nonmob,distance=1..20] run summon lightning_bolt
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164003}}}] if entity @s[scores={rgs_cooldown=..0}] run scoreboard players set @s rgs_cooldown 60
 
+# Queen's Satchel
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] if entity @s[scores={qst_cooldown=..0,qst_uses=1..}] run function smoges:impl/queen_bag/consume
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] if entity @s[scores={qst_cooldown=..0,qst_uses=1..}] run scoreboard players set @s qst_cooldown 80
+
 # Resets COAS score
 execute as @s run scoreboard players remove @s coas 1

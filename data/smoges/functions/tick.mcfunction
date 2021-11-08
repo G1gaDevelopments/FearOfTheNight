@@ -14,6 +14,7 @@ scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1.
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
 scoreboard players remove @a botb_cooldown 1
 scoreboard players remove @a rgs_cooldown 1
+scoreboard players remove @a qst_cooldown 1
 
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!smoges:is_riding_angry_bull]
@@ -39,5 +40,9 @@ execute unless entity @e[tag=queen,type=stray,limit=1] run bossbar set queen vis
 # Allows it to be daytime again once Nocturnus has been killed.
 execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true
 
-# Allows the sun to set on the British Empire again once Elizabeth has been killed.
+# Allows the sun to set on the British Empire again once Elizabeth has been killed, and fills everyone's Satchels.
 execute unless entity @e[tag=queen] run gamerule doDaylightCycle true
+execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]}] run scoreboard players set @s qst_uses 10
+
+# Action bar for Satchel
+execute as @e[type=player,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] at @s run title @s actionbar {"score":{"name":"@s","objective":"qst_uses"}}

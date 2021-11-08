@@ -7,6 +7,11 @@ scoreboard objectives add queen_atk dummy
 scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add botb_cooldown dummy
 scoreboard objectives add rgs_cooldown dummy
+scoreboard objectives add qst_cooldown dummy
+
+scoreboard objectives add qst_uses dummy
+scoreboard players set #-1 qst_uses -1
+scoreboard players set @a qst_uses 10
 
 # Projectile math. I hate this fuck you Timber Forge
 scoreboard objectives add FB_x1 dummy
