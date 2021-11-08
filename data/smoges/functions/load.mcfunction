@@ -12,7 +12,7 @@ scoreboard objectives add qst_cooldown dummy
 # Scoreboards for Queen's Satchel
 scoreboard objectives add qst_uses dummy
 scoreboard objectives add health health
-scoreboard players set @a qst_uses 0
+#scoreboard players set @a qst_uses 0
 
 # Projectile math. I hate this fuck you Timber Forge
 scoreboard objectives add FB_x1 dummy
