@@ -40,6 +40,11 @@ scoreboard objectives add uuid2t dummy
 scoreboard objectives add uuid3t dummy
 scoreboard objectives add uuid4t dummy
 
+scoreboard objectives add uuid1b trigger
+scoreboard objectives add uuid2b trigger
+scoreboard objectives add uuid3b trigger
+scoreboard objectives add uuid4b trigger
+
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}
 bossbar set blazeborn color yellow

@@ -58,7 +58,7 @@ execute as @e[tag=assassin,scores={time=600}] as @s run scoreboard players set @
 
 # Knight of Nocturnus attacks
 execute at @a if entity @e[tag=nt_knight,scores={time=100},distance=..20] run summon lightning_bolt
-execute as @e[tag=nt_knight,scores={time=100}] run say hi
+execute as @e[tag=nt_knight,scores={time=100}] if predicate smoges:chance50 run say Glory to Nocturnus!
 execute as @e[tag=nt_knight,scores={time=101}] as @s run scoreboard players set @s time 0
 
 # Enchanted Endermen
