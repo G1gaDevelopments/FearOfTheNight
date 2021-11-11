@@ -1,5 +1,5 @@
 # Fire. A lot of it.
-say fire
+execute as @s[scores={queen_atk=5}] if predicate smoges:chance25 run say Burn on the stake, witch!
 execute as @s[scores={queen_atk=0..5}] at @s run playsound minecraft:entity.blaze.shoot hostile @a[distance=..30]
 execute as @s[scores={queen_atk=0..5}] at @e[type=player,distance=..45] if predicate smoges:chance50 run setblock ~ ~ ~ fire keep
 

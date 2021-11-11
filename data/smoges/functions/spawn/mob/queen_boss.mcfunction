@@ -5,3 +5,4 @@ summon stray ~ ~ ~ {CustomNameVisible:1b,DeathLootTable:"smoges:entities/elizabe
 
 scoreboard players add @e[tag=queen,type=stray] queen_atk 0
 execute if entity @e[tag=queen,type=stray,limit=1] run bossbar set queen visible true
+execute as @e[tag=queen,type=stray] run say You are not fit to rule this kingdom!

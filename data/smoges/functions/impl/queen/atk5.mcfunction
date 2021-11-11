@@ -1,5 +1,5 @@
 # Literally just rushes you
-say RUSH B
+execute as @s[scores={queen_atk=170}] if predicate smoges:chance25 run say CHAAAAAAAAARGEEEEE
 execute as @s[scores={queen_atk=150..170}] at @s run playsound minecraft:entity.enderman.teleport hostile @a
 execute as @s[scores={queen_atk=150..170}] at @s anchored eyes rotated as @s run function smoges:impl/queen/bri_ish_charge
 execute as @s[scores={queen_atk=150..170}] at @s run particle sweep_attack ~ ~ ~ ~ ~ ~ 0.5 1

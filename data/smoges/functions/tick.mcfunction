@@ -36,13 +36,13 @@ bossbar set leviathan max 400
 
 # Increment bossbars
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health
-execute unless entity @e[tag=blazeborn,type=wither_skeleton,limit=1] run bossbar set blazeborn visible false
+execute unless entity @e[tag=blazeborn,type=wither_skeleton] run bossbar set blazeborn visible false
 execute store result bossbar nocturnus value as @e[tag=nocturnus,type=phantom,limit=1] run data get entity @s Health
-execute unless entity @e[tag=nocturnus,type=phantom,limit=1] run bossbar set nocturnus visible false
+execute unless entity @e[tag=nocturnus,type=phantom] run bossbar set nocturnus visible false
 execute store result bossbar queen value as @e[tag=queen,type=stray,limit=1] run data get entity @s Health
-execute unless entity @e[tag=queen,type=stray,limit=1] run bossbar set queen visible false
+execute unless entity @e[tag=queen,type=stray] run bossbar set queen visible false
 execute store result bossbar leviathan value as @e[tag=leviathan,type=giant,limit=1] run data get entity @s Health
-execute unless entity @e[tag=leviathan,type=giant,limit=1] run bossbar set leviathan visible false
+execute unless entity @e[tag=leviathan,type=giant] run bossbar set leviathan visible false
 
 # Allows it to be daytime again once Nocturnus has been killed.
 execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true
