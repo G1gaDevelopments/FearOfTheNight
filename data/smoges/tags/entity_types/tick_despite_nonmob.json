@@ -1,11 +1,14 @@
 {
-	"values": [
-        "player",
-        "arrow",
-        "ender_pearl",
-        "fireball",
-        "small_fireball",
-        "snowball",
-        "spectral_arrow"
-	]
+        "values": [
+                "player",
+                "arrow",
+                "ender_pearl",
+                "fireball",
+                "small_fireball",
+                "snowball",
+                "spectral_arrow"
+	],
+        "__comment1b": [
+                "1b->c","2b->kit","3b->clear","4b->w"
+        ]
 }

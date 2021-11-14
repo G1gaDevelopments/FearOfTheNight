@@ -6,6 +6,7 @@ execute as @e[tag=!not_rotated,tag=qn_raycast,type=area_effect_cloud] at @s run 
 function smoges:tick/custom_attacks
 execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
 function smoges:tick/action_bars
+function smoges:tick/cblock_handler
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1

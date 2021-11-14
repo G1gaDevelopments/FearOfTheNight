@@ -27,8 +27,9 @@ execute as @e[tag=queen,type=stray,scores={queen_atk=100..120}] at @s if entity 
 execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk5
 
 # Handles Elizabeth arrows.
-execute as @e[tag=qn_arrow, tag=!moving_ar] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/queen/arrow_motion
-execute as @e[tag=qn_arrow,scores={time=30}] as @s run kill @s
+execute as @e[type=arrow,scores={time=30}] as @s at @s run scoreboard players enable @a uuid3b
+execute as @e[tag=qn_arrow, tag=!moving_ar,type=spectral_arrow] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/queen/arrow_motion
+execute as @e[tag=qn_arrow,scores={time=30},type=spectral_arrow] as @s run kill @s
 
 # Leviathan's attacks
 execute as @e[type=giant,tag=leviathan,scores={levi_atk=0..11}] at @s if entity @e[type=player,distance=0..70] run function smoges:impl/leviathan/atk1
@@ -71,6 +72,7 @@ execute as @e[tag=nt_minion,scores={time=300}] as @s run kill @s
 execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
 execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run kill @s
 execute as @e[tag=qn_minion,scores={time=200}] as @s run kill @s
+scoreboard players enable @a uuid1b
 
 # PLAYERS
 

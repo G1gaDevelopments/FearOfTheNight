@@ -6,3 +6,4 @@
 (PMEMB)   6164005 - Enchanted Phantom Membrane
 (COAS)    6164006 - Queen's Satchel
 (NETHSWD) 6164007 - Sabre of the Leviathan
+(I.FRAME) 6164008 - Blazeborn Spawning Altar
