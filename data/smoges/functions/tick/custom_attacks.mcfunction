@@ -37,8 +37,8 @@ execute as @e[type=giant,tag=leviathan,scores={levi_atk=100}] at @s if entity @e
 execute as @e[type=giant,tag=leviathan,scores={levi_atk=150..180}] at @s if entity @e[type=player,distance=0..70] run function smoges:impl/leviathan/atk3
 
 # Handles Leviathan airstrikes
-execute as @e[type=armor_stand,tag=lv_airstrike] at @s run particle smoke ~ ~ ~ ~ ~ ~ 0.7 2
-execute as @e[type=armor_stand,tag=lv_airstrike] at @s run particle small_flame ~ ~ ~ ~ ~ ~ 0.7 2
+execute as @e[type=armor_stand,tag=lv_airstrike] at @s run particle smoke ~ ~ ~
+execute as @e[type=armor_stand,tag=lv_airstrike] at @s run particle small_flame ~ ~ ~
 execute as @e[type=armor_stand,tag=lv_as_active] at @s run effect give @s slow_falling
 execute as @e[type=armor_stand,tag=lv_as_active,nbt={OnGround:1b}] run tag @s add lv_as_explode
 execute as @e[type=armor_stand,tag=lv_as_explode] at @s run summon creeper ~ ~ ~ {Fuse:0}
@@ -53,7 +53,7 @@ execute as @e[tag=assassin,scores={time=200}] at @s run playsound item.armor.equ
 execute as @e[tag=assassin,scores={time=400}] as @s run data merge entity @s {HandItems:[{id:"minecraft:iron_sword",Count:1b,tag:{display:{Name:'{"text":"Assassin\'s Sword","color":"yellow"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:10,Operation:2,UUID:[I;-1042273713,2144028759,-1814818672,-1513346913]}]}},{id:"minecraft:iron_sword",Count:1b,tag:{display:{Name:'{"text":"Assassin\'s Sword","color":"yellow"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:10,Operation:2,UUID:[I;-1042273713,2144028759,-1814818672,-1513346913]}]}}]}
 execute as @e[tag=assassin,scores={time=400}] at @s run playsound item.armor.equip_diamond hostile @a[distance=..10]
 
-execute as @e[tag=assassin,scores={time=599}] at @s run particle sweep_attack ~-2 ~ ~-2 ~2 ~ ~2 0.5 2
+execute as @e[tag=assassin,scores={time=599}] at @s run particle sweep_attack ~ ~ ~
 execute as @e[tag=assassin,scores={time=599}] at @s run spreadplayers ~ ~ 10 1.0 false @s
 execute as @e[tag=assassin,scores={time=600}] as @s run scoreboard players set @s time 0
 

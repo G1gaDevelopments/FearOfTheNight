@@ -10,5 +10,5 @@ execute unless block ~ ~ ~ air run summon creeper ~ ~ ~ {ExplosionRadius:3,Fuse:
 execute unless block ~ ~ ~ air run kill @s
 
 execute at @s run tp ^ ^ ^0.5
-particle minecraft:flame ~ ~ ~ 0 0 0 0.1 2
+particle minecraft:flame ~ ~ ~
 playsound entity.ender_dragon.flap hostile @a[distance=..10]

@@ -7,4 +7,4 @@ scoreboard players remove @s qst_uses 1
 effect give @s absorption 240 2
 effect give @s regeneration 10 3
 execute as @s at @s run playsound minecraft:item.totem.use player @a[distance=..5]
-execute as @s at @s run particle totem_of_undying ~-1 ~ ~-1 ~1 ~ ~1 0.5 3
+execute as @s at @s run particle totem_of_undying ~ ~ ~
