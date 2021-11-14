@@ -1,0 +1,1 @@
+summon blaze ~ ~ ~ {CustomNameVisible:1b,DeathLootTable:"smoges:entities/ench_blaze_loot",Health:30f,Tags:["ench_blaze","scanned"],CustomName:'{"text":"Enchanted Blaze","color":"aqua"}',Attributes:[{Name:"generic.max_health",Base:30}]}

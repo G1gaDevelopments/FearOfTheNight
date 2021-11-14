@@ -1,0 +1,1 @@
+give @s blaze_rod{display:{Name:'{"text":"Enchanted Blaze Rod","color":"aqua","italic":false}'},CustomModelData:6164009,Enchantments:[{}]} 1
