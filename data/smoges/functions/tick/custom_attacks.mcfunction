@@ -66,6 +66,10 @@ execute as @e[tag=nt_knight,scores={time=101}] as @s run scoreboard players set 
 execute as @e[tag=ench_enderman,scores={time=199..202}] at @s run function smoges:impl/ench_endermen/atk1
 execute as @e[tag=ench_enderman,scores={time=220}] run scoreboard players set @s time 0
 
+# Enchanted Blaze
+execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] at @s at @e[type=player,distance=..15] run setblock ~ ~ ~ fire keep
+execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] run scoreboard players set @s time 0
+
 # Handles reinforcements.
 execute as @e[tag=bb_minion,scores={time=200}] as @s run kill @s
 execute as @e[tag=nt_minion,scores={time=300}] as @s run kill @s
