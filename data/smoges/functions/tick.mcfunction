@@ -55,5 +55,3 @@ execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag
 
 # refilling for Satchel
 execute as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] run function smoges:impl/queen_bag/refill
-
-# execute as @e[type=player,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] at @s run title @s actionbar {"score":{"name":"@s","objective":"qst_uses"}}
