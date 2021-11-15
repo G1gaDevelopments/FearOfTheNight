@@ -7,6 +7,7 @@ function smoges:tick/custom_attacks
 execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
 function smoges:tick/action_bars
 function smoges:tick/cblock_handler
+function smoges:tick/ccraft_handler
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1

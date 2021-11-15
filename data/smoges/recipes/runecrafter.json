@@ -1,0 +1,28 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#X#",
+    "O@O",
+    "+++"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "@": {
+      "item": "minecraft:crafting_table"
+    },
+    "+": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "item": "minecraft:knowledge_book"
+  }
+}
