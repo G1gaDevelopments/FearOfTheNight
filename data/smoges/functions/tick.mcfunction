@@ -56,3 +56,6 @@ execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag
 
 # refilling for Satchel
 execute as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] run function smoges:impl/queen_bag/refill
+
+# Detects runes near summoning altars.
+execute as @e[type=glow_item_frame,tag=bb_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{display:{Name:'{"text":"Blazeborn Summoning Crystal","color":"gold","bold":false,"italic":false}',Lore:['{"text":"Throw me onto a","color":"gray"}','{"text":"Blazeborn Summoning Altar","color":"gray"}']},CustomModelData:6164011},Count:1b},OnGround:1b},distance=..2] run function smoges:impl/blazeborn/summon_seq
