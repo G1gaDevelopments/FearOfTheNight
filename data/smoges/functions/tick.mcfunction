@@ -17,6 +17,7 @@ scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1.
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
 scoreboard players remove @e[tag=leviathan,type=giant,scores={levi_atk=1..}] levi_atk 1
 scoreboard players remove @e[tag=egglord,type=skeleton,scores={egglord_atk=1..}] egglord_atk 1
+scoreboard players remove @e[tag=egglord,type=skeleton] el_asb_cooldown 1
 scoreboard players remove @a botb_cooldown 1
 scoreboard players remove @a rgs_cooldown 1
 scoreboard players remove @a qst_cooldown 1

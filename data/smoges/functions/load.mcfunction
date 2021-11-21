@@ -10,6 +10,7 @@ scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add botb_cooldown dummy
 scoreboard objectives add rgs_cooldown dummy
 scoreboard objectives add qst_cooldown dummy
+scoreboard objectives add el_asb_cooldown dummy
 
 # Scoreboards for Queen's Satchel
 scoreboard objectives add qst_uses dummy

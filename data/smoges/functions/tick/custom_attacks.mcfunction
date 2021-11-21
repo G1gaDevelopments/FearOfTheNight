@@ -54,7 +54,7 @@ execute as @e[tag=el_eggspam,tag=!moving_egg,type=egg] at @s rotated as @e[type=
 execute as @e[tag=el_eggspam,scores={time=30}] run kill @s
 
 # Handles Egg Lord absorbing chickens.
-execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10] run function smoges:impl/egglord/absorb
+execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] run function smoges:impl/egglord/absorb
 
 # MOBS
 
