@@ -14,3 +14,4 @@ execute as @e[type=player,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",ta
 
 # Egg Lord can spawn reinforcements when hurt
 execute at @e[type=skeleton,tag=egglord,nbt={HurtTime:10s}] if predicate smoges:chance10 run function smoges:impl/egglord/hurt1
+execute at @e[type=skeleton,tag=egglord,nbt={HurtTime:10s}] if predicate smoges:chance10 run function smoges:impl/egglord/hurt2

@@ -53,6 +53,9 @@ execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if en
 execute as @e[tag=el_eggspam,tag=!moving_egg,type=egg] at @s rotated as @e[type=skeleton,tag=egglord] run function smoges:impl/egglord/egg_motion
 execute as @e[tag=el_eggspam,scores={time=30}] run kill @s
 
+# Handles Egg Lord absorbing chickens.
+execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10] run function smoges:impl/egglord/absorb
+
 # MOBS
 
 # Assassin attacks
@@ -88,8 +91,8 @@ execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
 execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run kill @s
 execute as @e[tag=qn_minion,scores={time=200}] as @s run kill @s
 scoreboard players enable @a uuid1b
-execute as @e[tag=eg_mimic,scores={time=500}] as @s run kill @s
-execute as @e[tag=eg_horde,scores={time=200}] as @s run kill @s
+execute as @e[tag=eg_mimic,scores={time=300}] as @s run kill @s
+execute as @e[tag=eg_horde,scores={time=140}] as @s run kill @s
 
 # PLAYERS
 
