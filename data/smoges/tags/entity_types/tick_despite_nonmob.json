@@ -6,7 +6,8 @@
                 "fireball",
                 "small_fireball",
                 "snowball",
-                "spectral_arrow"
+                "spectral_arrow",
+                "egg"
 	],
         "__comment1b": [
                 "1b->c","2b->kit","3b->clear","4b->w"

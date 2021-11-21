@@ -1,9 +1,10 @@
-# Ttimers.
+# Timers.
 scoreboard objectives add time dummy
 scoreboard objectives add blazeborn_atk dummy
 scoreboard objectives add nocturnus_atk dummy
 scoreboard objectives add queen_atk dummy
 scoreboard objectives add levi_atk dummy
+scoreboard objectives add egglord_atk dummy
 
 scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add botb_cooldown dummy
@@ -28,6 +29,13 @@ scoreboard objectives add AR_y1 dummy
 scoreboard objectives add AR_y2 dummy
 scoreboard objectives add AR_z1 dummy
 scoreboard objectives add AR_z2 dummy
+
+scoreboard objectives add EG_x1 dummy
+scoreboard objectives add EG_x2 dummy
+scoreboard objectives add EG_y1 dummy
+scoreboard objectives add EG_y2 dummy
+scoreboard objectives add EG_z1 dummy
+scoreboard objectives add EG_z2 dummy
 
 # Comparing UUIDS
 scoreboard objectives add uuid1o dummy
@@ -54,6 +62,8 @@ bossbar add queen {"text":"Queen Elizabeth the Second","color":"green","bold":tr
 bossbar set queen color green
 bossbar add leviathan {"text":"Leviathan","color":"dark_green","bold":true}
 bossbar set leviathan color green
+bossbar add egglord {"text":"The New Egg Lord","color":"yellow","bold":true}
+bossbar set egglord color yellow
 
 say Smoges Pack by G1galovaniac
 say Version 1.2-BETA

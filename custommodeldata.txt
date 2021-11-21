@@ -13,3 +13,5 @@
 (GI.FRME) 6164012 - Leviathan Spawning Altar
 (QUARTZ)  6164013 - Leviathan Summoning Crystal
 (GI.FRME) 6164014 - Egg Lord Spawning Altar
+(EGG)     6164015 - Egg of Reincarnation
+(COAS)    6164016 - Royal Egg Launcher

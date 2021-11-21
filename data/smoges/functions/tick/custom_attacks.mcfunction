@@ -28,7 +28,7 @@ execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity 
 
 # Handles Elizabeth arrows.
 execute as @e[type=arrow,scores={time=30}] as @s at @s run scoreboard players enable @a uuid3b
-execute as @e[tag=qn_arrow, tag=!moving_ar,type=spectral_arrow] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/queen/arrow_motion
+execute as @e[tag=qn_arrow,tag=!moving_ar,type=spectral_arrow] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/queen/arrow_motion
 execute as @e[tag=qn_arrow,scores={time=30},type=spectral_arrow] as @s run kill @s
 
 # Leviathan's attacks
@@ -43,6 +43,15 @@ execute as @e[type=armor_stand,tag=lv_as_active] at @s run effect give @s slow_f
 execute as @e[type=armor_stand,tag=lv_as_active,nbt={OnGround:1b}] run tag @s add lv_as_explode
 execute as @e[type=armor_stand,tag=lv_as_explode] at @s run summon creeper ~ ~ ~ {Fuse:0}
 kill @e[tag=lv_as_explode]
+
+# Egg Lord's attacks
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=0..30}] at @s if entity @e[type=player,distance=0..140] run function smoges:impl/egglord/atk1
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=50}] at @s if entity @e[type=player,distance=0..140] run function smoges:impl/egglord/atk2
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if entity @e[type=player,distance=0..140] run function smoges:impl/egglord/atk3
+
+# Handles Egg Lord eggs.
+execute as @e[tag=el_eggspam,tag=!moving_egg,type=egg] at @s rotated as @e[type=skeleton,tag=egglord] run function smoges:impl/egglord/egg_motion
+execute as @e[tag=el_eggspam,scores={time=30}] run kill @s
 
 # MOBS
 
@@ -70,6 +79,8 @@ execute as @e[tag=ench_enderman,scores={time=220}] run scoreboard players set @s
 execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] at @s at @e[type=player,distance=..15] run setblock ~ ~ ~ fire keep
 execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] run scoreboard players set @s time 0
 
+# REINFORCEMENTS
+
 # Handles reinforcements.
 execute as @e[tag=bb_minion,scores={time=200}] as @s run kill @s
 execute as @e[tag=nt_minion,scores={time=300}] as @s run kill @s
@@ -77,6 +88,8 @@ execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
 execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run kill @s
 execute as @e[tag=qn_minion,scores={time=200}] as @s run kill @s
 scoreboard players enable @a uuid1b
+execute as @e[tag=eg_mimic,scores={time=500}] as @s run kill @s
+execute as @e[tag=eg_horde,scores={time=200}] as @s run kill @s
 
 # PLAYERS
 

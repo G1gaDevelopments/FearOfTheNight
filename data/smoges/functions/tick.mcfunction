@@ -16,6 +16,7 @@ scoreboard players remove @e[tag=blazeborn,type=wither_skeleton,scores={blazebor
 scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1..}] nocturnus_atk 1
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
 scoreboard players remove @e[tag=leviathan,type=giant,scores={levi_atk=1..}] levi_atk 1
+scoreboard players remove @e[tag=egglord,type=skeleton,scores={egglord_atk=1..}] egglord_atk 1
 scoreboard players remove @a botb_cooldown 1
 scoreboard players remove @a rgs_cooldown 1
 scoreboard players remove @a qst_cooldown 1
@@ -35,6 +36,8 @@ bossbar set queen players @a
 bossbar set queen max 130
 bossbar set leviathan players @a
 bossbar set leviathan max 400
+bossbar set egglord players @a
+bossbar set egglord max 400
 
 # Increment bossbars
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health
@@ -45,6 +48,8 @@ execute store result bossbar queen value as @e[tag=queen,type=stray,limit=1] run
 execute unless entity @e[tag=queen,type=stray] run bossbar set queen visible false
 execute store result bossbar leviathan value as @e[tag=leviathan,type=giant,limit=1] run data get entity @s Health
 execute unless entity @e[tag=leviathan,type=giant] run bossbar set leviathan visible false
+execute store result bossbar egglord value as @e[tag=egglord,type=skeleton,limit=1] run data get entity @s Health
+execute unless entity @e[tag=egglord,type=skeleton] run bossbar set egglord visible false
 
 # Allows it to be daytime again once Nocturnus has been killed.
 execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true
