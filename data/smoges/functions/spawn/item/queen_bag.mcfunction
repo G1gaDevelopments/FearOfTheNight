@@ -1,1 +1,1 @@
-give @s carrot_on_a_stick{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]} 1
+give @s carrot_on_a_stick{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":false,"italic":false}'},CustomModelData:6164006,Enchantments:[{}]} 1

@@ -1,5 +1,4 @@
 # Summons airstrikes.
-say airstrike
 execute as @s[scores={levi_atk=1..11}] at @s run summon armor_stand ~ ~25 ~ {Invulnerable:1b,Invisible:0b,Tags:["lv_airstrike"],OnGround:0b}
 execute as @s[scores={levi_atk=0}] at @s run spreadplayers ~ ~ 1 30 false @e[type=armor_stand,tag=lv_airstrike]
 execute as @s[scores={levi_atk=0}] at @s run tag @e[type=armor_stand,tag=lv_airstrike] add lv_as_active

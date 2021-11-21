@@ -10,3 +10,6 @@
 (B.ROD)   6164009 - Enchanted Blaze Rod
 (GI.FRME) 6164010 - Runecrafter
 (QUARTZ)  6164011 - Blazeborn Summoning Crystal
+(GI.FRME) 6164012 - Leviathan Spawning Altar
+(QUARTZ)  6164013 - Leviathan Summoning Crystal
+(GI.FRME) 6164014 - Egg Lord Spawning Altar

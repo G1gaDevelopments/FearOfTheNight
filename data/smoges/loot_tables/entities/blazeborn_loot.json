@@ -32,7 +32,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Baton of the Blazeborn\",\"color\":\"gold\",\"bold\":true}'},Unbreakable:1b,CustomModelData:6164001,Enchantments:[{id:\"minecraft:sharpness\",lvl:5s},{id:\"minecraft:smite\",lvl:5s},{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:3,Operation:0,UUID:[I;-1972763868,776685754,-1233797550,-1043079159],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:13,Operation:0,UUID:[I;1506152633,-143896605,-1112843332,-1181297996],Slot:\"mainhand\"}]}"
+                "tag": "{display:{Name:'{\"text\":\"Baton of the Blazeborn\",\"color\":\"gold\",\"bold\":false,\"italic\":false}'},Unbreakable:1b,CustomModelData:6164001,Enchantments:[{id:\"minecraft:sharpness\",lvl:5s},{id:\"minecraft:smite\",lvl:5s},{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:3,Operation:0,UUID:[I;-1972763868,776685754,-1233797550,-1043079159],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:13,Operation:0,UUID:[I;1506152633,-143896605,-1112843332,-1181297996],Slot:\"mainhand\"}]}"
               }
             ],
             "conditions": [

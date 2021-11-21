@@ -51,11 +51,12 @@ execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true
 
 # Allows the sun to set on the British Empire again once Elizabeth has been killed, and fills everyone's Satchels.
 execute unless entity @e[tag=queen] run gamerule doDaylightCycle true
-execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run scoreboard players set @s qst_uses 10
-execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":true,"italic":true}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run tag @s add held_satchel
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":false,"italic":false}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run scoreboard players set @s qst_uses 10
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'{"text":"Queen\'s Satchel","color":"green","bold":false,"italic":false}'},CustomModelData:6164006,Enchantments:[{}]}}]},tag=!held_satchel] run tag @s add held_satchel
 
 # refilling for Satchel
 execute as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] run function smoges:impl/queen_bag/refill
 
-# Detects runes near summoning altars.
-execute as @e[type=glow_item_frame,tag=bb_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{display:{Name:'{"text":"Blazeborn Summoning Crystal","color":"gold","bold":false,"italic":false}',Lore:['{"text":"Throw me onto a","color":"gray"}','{"text":"Blazeborn Summoning Altar","color":"gray"}']},CustomModelData:6164011},Count:1b},OnGround:1b},distance=..2] run function smoges:impl/blazeborn/summon_seq
+# Detects summoning runes/items near summoning altars.
+execute as @e[type=glow_item_frame,tag=bb_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{CustomModelData:6164011},Count:1b},OnGround:1b},distance=..2] run function smoges:impl/blazeborn/summon_seq
+execute as @e[type=glow_item_frame,tag=lv_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{CustomModelData:6164013},Count:1b},OnGround:1b},distance=..2] run function smoges:impl/leviathan/summon_seq
