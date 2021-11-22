@@ -15,18 +15,7 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomMod
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] if entity @s[scores={qst_cooldown=..0,qst_uses=1..}] run scoreboard players set @s qst_cooldown 80
 
 # Egg Launcher TODO: Optimise ammo check
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:5b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:6b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:7b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:8b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:9b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:10b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:11b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:12b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:13b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:14b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:15b}]}] run function smoges:impl/egg_launcher/burst
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0},nbt={Inventory:[{id:"minecraft:egg",Count:16b}]}] run function smoges:impl/egg_launcher/burst
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0,egl_ammo=5..}] run function smoges:impl/egg_launcher/burst
 
 # Resets COAS score
 execute as @s run scoreboard players remove @s coas 1

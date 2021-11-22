@@ -69,3 +69,6 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomM
 execute as @e[type=glow_item_frame,tag=bb_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{CustomModelData:6164011},Count:1b},OnGround:1b},distance=..2] run function smoges:impl/blazeborn/summon_seq
 execute as @e[type=glow_item_frame,tag=lv_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{CustomModelData:6164013},Count:1b},OnGround:1b},distance=..2] run function smoges:impl/leviathan/summon_seq
 execute as @e[type=glow_item_frame,tag=eg_spawner] at @s if entity @e[type=egg,nbt={Item:{id:"minecraft:egg",tag:{CustomModelData:6164015}}},distance=..2] if predicate smoges:chance25 run function smoges:impl/egglord/summon_seq
+
+# Counts eggs in everyones' inventory (for Egg Launcher)
+execute as @a store result score @s egl_ammo run clear @s egg 0
