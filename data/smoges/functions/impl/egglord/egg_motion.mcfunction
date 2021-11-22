@@ -22,6 +22,6 @@ scoreboard players operation @s EG_z2 -= @s EG_z1
 tag @s add moving_egg
 
 # Gives the arrow motion
-execute store result entity @s Motion[0] double 0.1 run scoreboard players get @s EG_x2
-execute store result entity @s Motion[1] double 0.1 run scoreboard players get @s EG_y2
-execute store result entity @s Motion[2] double 0.1 run scoreboard players get @s EG_z2
+execute store result entity @s Motion[0] double 0.01 run scoreboard players get @s EG_x2
+execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s EG_y2
+execute store result entity @s Motion[2] double 0.01 run scoreboard players get @s EG_z2
