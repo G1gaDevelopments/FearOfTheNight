@@ -11,6 +11,8 @@ scoreboard objectives add botb_cooldown dummy
 scoreboard objectives add rgs_cooldown dummy
 scoreboard objectives add qst_cooldown dummy
 scoreboard objectives add el_asb_cooldown dummy
+scoreboard objectives add egl_cooldown dummy
+scoreboard objectives add egl_bursts dummy
 
 # Scoreboards for Queen's Satchel
 scoreboard objectives add qst_uses dummy
@@ -53,6 +55,10 @@ scoreboard objectives add uuid1b trigger
 scoreboard objectives add uuid2b trigger
 scoreboard objectives add uuid3b trigger
 scoreboard objectives add uuid4b trigger
+
+# Scheduler engine by PeerHeer#0910. Credit to vdvman1#9510 for additional help
+scoreboard objectives add launch_time dummy
+scoreboard players set $shoot_interval launch_time 5
 
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}

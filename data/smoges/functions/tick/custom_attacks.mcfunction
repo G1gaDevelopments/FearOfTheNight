@@ -99,3 +99,16 @@ execute as @e[tag=eg_horde,scores={time=140}] as @s run kill @s
 # Baton of the Blazeborn
 execute as @e[tag=botb_fireball, tag=!moving_fb] at @s rotated as @e[type=player,sort=nearest,limit=1] run function smoges:impl/blazeborn/fireball_motion
 execute as @e[tag=botb_fireball,scores={time=60}] as @s run kill @s
+
+# Egg Launcher
+execute as @e[type=player,scores={egl_bursts=1..}] at @s anchored eyes run summon egg ^ ^ ^1 {NoGravity:1b,Tags:["egl_egg"],Passengers:[{id:"minecraft:armor_stand",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["egl_explodeme"]}]}
+
+execute as @e[tag=egl_egg,tag=!moving_egg] at @s rotated as @e[type=player,sort=nearest,limit=1] run function smoges:impl/egg_launcher/egg_motion
+execute as @e[tag=egl_egg,scores={time=60}] at @s run function smoges:impl/egg_launcher/explode
+execute as @e[tag=egl_egg] at @s unless block ^ ^ ^1 air run function smoges:impl/egg_launcher/explode
+execute as @e[tag=egl_egg] at @s if entity @e[type=!#smoges:nonmob,distance=0..1] run function smoges:impl/egg_launcher/explode
+execute as @e[tag=egl_egg,scores={time=25..}] at @s if entity @e[type=player,tag=!egl_firing,distance=0..1] run function smoges:impl/egg_launcher/explode
+
+execute as @e[type=armor_stand,tag=egl_explodeme,predicate=!smoges:is_egl_projectile] run function smoges:impl/egg_launcher/explode
+
+tag @e[type=player,scores={egl_bursts=..0},tag=egl_firing] remove egl_firing

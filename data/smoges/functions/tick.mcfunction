@@ -1,4 +1,4 @@
-# Sub-functions for handling more precise stuffs
+# Sub-functions for handling more complex stuffs
 function smoges:tick/mob_scan
 function smoges:tick/on_hurt
 execute as @e[tag=!not_rotated,tag=nt_raycast,type=area_effect_cloud] at @s run function smoges:impl/nocturnus/raycasting_handler
@@ -21,6 +21,8 @@ scoreboard players remove @e[tag=egglord,type=skeleton] el_asb_cooldown 1
 scoreboard players remove @a botb_cooldown 1
 scoreboard players remove @a rgs_cooldown 1
 scoreboard players remove @a qst_cooldown 1
+scoreboard players remove @a egl_cooldown 1
+scoreboard players remove @a egl_bursts 1
 
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!smoges:is_riding_angry_bull]
