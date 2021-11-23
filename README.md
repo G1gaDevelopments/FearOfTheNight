@@ -28,6 +28,8 @@ Go to the [Releases tab](https://github.com/Errorcrafter/smoges/releases) and cl
 - **Singleplayer:** `.minecraft/saves/(your world name here)/datapacks`
 - **Multiplayer:** `(root directory)/world/datapacks`
 
+Once you've done that, go ingame and type `/reload` (or, if you use Minehut, `/miecraft:reload`). You're done!
+
 ## Credits
 - [MCStacker](https://mcstacker.net) and [Minecraft Tools](https://minecraft.tools/en/) for command generation
 - [Jragon014](https://www.youtube.com/channel/UC_LBXGLs8Sa0opJHFVDVBqA) for a bunch of tutorials on stuff (i forgot which stuff) and also code for the Skeletal Assassin and right-click detection.
