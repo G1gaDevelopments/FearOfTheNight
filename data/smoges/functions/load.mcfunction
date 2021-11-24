@@ -70,5 +70,5 @@ bossbar add egglord {"text":"The New Egg Lord","color":"yellow","bold":true}
 bossbar set egglord color yellow
 
 say Smoges Pack by G1galovaniac
-say Version 1.2-BETA
+say Version 1.3-BETA
 say Changelogs available on Github
