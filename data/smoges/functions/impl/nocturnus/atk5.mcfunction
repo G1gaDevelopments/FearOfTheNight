@@ -1,3 +1,0 @@
-# Spawns mimics
-say mimics
-execute as @s[scores={nocturnus_atk=240..242}] run summon phantom ~ ~ ~ {Glowing:1b,CustomNameVisible:1b,PersistenceRequired:1b,Health:1f,Size:40,Tags:["nt_mimic"],CustomName:'{"text":"Nocturnus, Monstrosity of the Night","color":"dark_blue","bold":true}',ActiveEffects:[{Id:5b,Amplifier:3b,Duration:999999},{Id:10b,Amplifier:1b,Duration:999999},{Id:11b,Amplifier:1b,Duration:999999}],Attributes:[{Name:"generic.max_health",Base:1}]}
