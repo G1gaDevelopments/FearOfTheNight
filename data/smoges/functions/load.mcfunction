@@ -57,17 +57,23 @@ scoreboard objectives add uuid2b trigger
 scoreboard objectives add uuid3b trigger
 scoreboard objectives add uuid4b trigger
 
+# Nocturnus
+scoreboard objectives add nt_remtgts dummy
+
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}
 bossbar set blazeborn color yellow
-bossbar add nocturnus {"text":"Nocturnus, Monstrosity of the Night","color":"dark_blue","bold":true}
-bossbar set nocturnus color blue
 bossbar add queen {"text":"Queen Elizabeth the Second","color":"green","bold":true}
 bossbar set queen color green
 bossbar add leviathan {"text":"Leviathan","color":"dark_green","bold":true}
 bossbar set leviathan color green
 bossbar add egglord {"text":"The New Egg Lord","color":"yellow","bold":true}
 bossbar set egglord color yellow
+bossbar add nocturnus_phase1 {"text":"Remaining Targets","color":"dark_blue","bold":true}
+bossbar set nocturnus_phase1 style notched_10
+bossbar set nocturnus_phase1 color blue
+bossbar add nocturnus {"text":"Nocturnus, Monstrosity of the Night","color":"dark_blue","bold":true}
+bossbar set nocturnus color blue
 
 say Smoges Pack by G1galovaniac
 say Version 1.3-BETA

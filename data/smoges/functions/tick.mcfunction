@@ -8,6 +8,7 @@ execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
 function smoges:tick/action_bars
 function smoges:tick/cblock_handler
 function smoges:tick/ccraft_handler
+function smoges:tick/nt_phase_handler
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1
@@ -33,8 +34,6 @@ kill @e[type=husk,tag=lv_rider,predicate=!smoges:is_leviathan_rider]
 # Display bossbars
 bossbar set blazeborn players @a
 bossbar set blazeborn max 150
-bossbar set nocturnus players @a
-bossbar set nocturnus max 300
 bossbar set queen players @a
 bossbar set queen max 130
 bossbar set leviathan players @a
@@ -45,7 +44,7 @@ bossbar set egglord max 500
 # Increment bossbars
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health
 execute unless entity @e[tag=blazeborn,type=wither_skeleton] run bossbar set blazeborn visible false
-execute store result bossbar nocturnus value as @e[tag=nocturnus,type=phantom,limit=1] run data get entity @s Health
+execute store result bossbar nocturnus value as @e[tag=nocturnus_phase2,type=phantom,limit=1] run data get entity @s Health
 execute unless entity @e[tag=nocturnus,type=phantom] run bossbar set nocturnus visible false
 execute store result bossbar queen value as @e[tag=queen,type=stray,limit=1] run data get entity @s Health
 execute unless entity @e[tag=queen,type=stray] run bossbar set queen visible false
