@@ -1,7 +1,7 @@
 # Timers.
 scoreboard objectives add time dummy
 scoreboard objectives add blazeborn_atk dummy
-scoreboard objectives add nocturnus_atk dummy
+scoreboard objectives add nocturnus_p2_atk dummy
 scoreboard objectives add queen_atk dummy
 scoreboard objectives add levi_atk dummy
 scoreboard objectives add egglord_atk dummy
@@ -40,6 +40,13 @@ scoreboard objectives add EG_y1 dummy
 scoreboard objectives add EG_y2 dummy
 scoreboard objectives add EG_z1 dummy
 scoreboard objectives add EG_z2 dummy
+
+scoreboard objectives add PJ_x1 dummy
+scoreboard objectives add PJ_x2 dummy
+scoreboard objectives add PJ_y1 dummy
+scoreboard objectives add PJ_y2 dummy
+scoreboard objectives add PJ_z1 dummy
+scoreboard objectives add PJ_z2 dummy
 
 # Comparing UUIDS
 scoreboard objectives add uuid1o dummy

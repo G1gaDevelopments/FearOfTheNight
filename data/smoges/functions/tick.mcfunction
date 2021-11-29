@@ -14,7 +14,7 @@ function smoges:tick/nt_phase_handler
 scoreboard players add @e[type=!#smoges:nonmob] time 1
 scoreboard players add @e[type=#smoges:tick_despite_nonmob] time 1
 scoreboard players remove @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=1..}] blazeborn_atk 1
-scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=1..}] nocturnus_atk 1
+scoreboard players remove @e[tag=nocturnus_phase2,type=phantom,scores={nocturnus_p2_atk=1..}] nocturnus_p2_atk 1
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
 scoreboard players remove @e[tag=leviathan,type=giant,scores={levi_atk=1..}] levi_atk 1
 scoreboard players remove @e[tag=egglord,type=skeleton,scores={egglord_atk=1..}] egglord_atk 1
@@ -45,7 +45,7 @@ bossbar set egglord max 500
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health
 execute unless entity @e[tag=blazeborn,type=wither_skeleton] run bossbar set blazeborn visible false
 execute store result bossbar nocturnus value as @e[tag=nocturnus_phase2,type=phantom,limit=1] run data get entity @s Health
-execute unless entity @e[tag=nocturnus,type=phantom] run bossbar set nocturnus visible false
+execute unless entity @e[tag=nocturnus_phase2,type=phantom] run bossbar set nocturnus visible false
 execute store result bossbar queen value as @e[tag=queen,type=stray,limit=1] run data get entity @s Health
 execute unless entity @e[tag=queen,type=stray] run bossbar set queen visible false
 execute store result bossbar leviathan value as @e[tag=leviathan,type=giant,limit=1] run data get entity @s Health

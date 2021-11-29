@@ -4,3 +4,4 @@ tag @s add nocturnus_phase2
 data merge entity @s {NoAI:0b,Invulnerable:0b}
 bossbar set nocturnus_phase1 visible false
 bossbar set nocturnus visible true
+scoreboard players add @s nocturnus_p2_atk 0
