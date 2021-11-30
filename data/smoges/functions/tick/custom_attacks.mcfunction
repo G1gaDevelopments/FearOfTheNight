@@ -12,13 +12,6 @@ execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=130..160}
 execute as @e[tag=bb_fireball, tag=!moving_fb] at @s rotated as @e[type=wither_skeleton,tag=blazeborn] run function smoges:impl/blazeborn/fireball_motion
 execute as @e[tag=bb_fireball,scores={time=30}] as @s run kill @s
 
-# Nocturnus, Monstrosity of the Night's attacks
-execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=0..40}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk1
-execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=80}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk2
-execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=100..110}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk3
-execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=140..180}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk4
-execute as @e[tag=nocturnus,type=phantom,scores={nocturnus_atk=240..242}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/nocturnus/atk5
-
 # Elizabeth's attacks
 execute as @e[tag=queen,type=stray,scores={queen_atk=0..5}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk1
 execute as @e[tag=queen,type=stray,scores={queen_atk=30..35}] at @s if entity @e[type=player,distance=0..40] run function smoges:impl/queen/atk2
@@ -56,6 +49,11 @@ execute as @e[tag=el_eggspam,scores={time=30}] run kill @s
 # Handles Egg Lord absorbing chickens.
 execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] run function smoges:impl/egglord/absorb
 
+# Nocturnus, Monstrosity of the Night's attacks in Phase 2
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=0..20}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk1
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=60..150}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk2
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=160..180}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk3
+
 # MOBS
 
 # Assassin attacks
@@ -86,8 +84,8 @@ execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] run scoreboard player
 
 # Handles reinforcements.
 execute as @e[tag=bb_minion,scores={time=200}] as @s run kill @s
-execute as @e[tag=nt_minion,scores={time=300}] as @s run kill @s
-execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
+# execute as @e[tag=nt_minion,scores={time=300}] as @s run kill @s
+# execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
 execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run kill @s
 execute as @e[tag=qn_minion,scores={time=200}] as @s run kill @s
 scoreboard players enable @a uuid1b
