@@ -9,6 +9,7 @@ function smoges:tick/action_bars
 function smoges:tick/cblock_handler
 function smoges:tick/ccraft_handler
 function smoges:tick/nt_phase_handler
+function smoges:tick/projectile_handler
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1
@@ -71,3 +72,6 @@ execute as @e[type=glow_item_frame,tag=eg_spawner] at @s if entity @e[type=egg,n
 
 # Counts eggs in everyones' inventory (for Egg Launcher)
 execute as @a store result score @s egl_ammo run clear @s egg 0
+
+# Hacky workaround for Nocturnus phase 2 bossbar not working (?)
+execute if entity @e[type=phantom,tag=nocturnus_phase2] run bossbar set nocturnus visible true
