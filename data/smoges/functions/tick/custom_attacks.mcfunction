@@ -9,7 +9,7 @@ execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=100}] at 
 execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=130..160}] at @s if entity @e[type=player,distance=0..30] run function smoges:impl/blazeborn/atk6
 
 # Handles Blazeborn fireballs.
-execute as @e[tag=bb_fireball, tag=!moving_fb] at @s rotated as @e[type=wither_skeleton,tag=blazeborn] run function smoges:impl/blazeborn/fireball_motion
+execute as @e[tag=bb_fireball, tag=!moving_fb] at @s rotated as @e[type=wither_skeleton,tag=blazeborn] run function smoges:impl/projectile_motion
 execute as @e[tag=bb_fireball,scores={time=30}] as @s run kill @s
 
 # Elizabeth's attacks
@@ -21,7 +21,7 @@ execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity 
 
 # Handles Elizabeth arrows.
 execute as @e[type=arrow,scores={time=30}] as @s at @s run scoreboard players enable @a uuid3b
-execute as @e[tag=qn_arrow,tag=!moving_ar,type=spectral_arrow] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/queen/arrow_motion
+execute as @e[tag=qn_arrow,tag=!moving_ar,type=spectral_arrow] at @s rotated as @e[type=stray,tag=queen] run function smoges:impl/projectile_motion
 execute as @e[tag=qn_arrow,scores={time=30},type=spectral_arrow] as @s run kill @s
 
 # Leviathan's attacks
@@ -43,7 +43,7 @@ execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=50}] at @s if entity
 execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if entity @e[type=player,distance=0..140] run function smoges:impl/egglord/atk3
 
 # Handles Egg Lord eggs.
-execute as @e[tag=el_eggspam,tag=!moving_egg,type=egg] at @s rotated as @e[type=skeleton,tag=egglord] run function smoges:impl/egglord/egg_motion
+execute as @e[tag=el_eggspam,tag=!moving_egg,type=egg] at @s rotated as @e[type=skeleton,tag=egglord] run function smoges:impl/projectile_motion
 execute as @e[tag=el_eggspam,scores={time=30}] run kill @s
 
 # Handles Egg Lord absorbing chickens.
@@ -84,8 +84,6 @@ execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] run scoreboard player
 
 # Handles reinforcements.
 execute as @e[tag=bb_minion,scores={time=200}] as @s run kill @s
-# execute as @e[tag=nt_minion,scores={time=300}] as @s run kill @s
-# execute as @e[tag=nt_mimic,scores={time=400}] as @s run kill @s
 execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run kill @s
 execute as @e[tag=qn_minion,scores={time=200}] as @s run kill @s
 scoreboard players enable @a uuid1b
@@ -95,13 +93,12 @@ execute as @e[tag=eg_horde,scores={time=140}] as @s run kill @s
 # PLAYERS
 
 # Baton of the Blazeborn
-execute as @e[tag=botb_fireball, tag=!moving_fb] at @s rotated as @e[type=player,sort=nearest,limit=1] run function smoges:impl/blazeborn/fireball_motion
+execute as @e[tag=botb_fireball, tag=!moving_fb] at @s rotated as @e[type=player,sort=nearest,limit=1] run function smoges:impl/projectile_motion
 execute as @e[tag=botb_fireball,scores={time=60}] as @s run kill @s
 
 # Egg Launcher
-execute as @e[type=player,scores={egl_bursts=1..}] at @s anchored eyes run summon egg ^ ^ ^1 {NoGravity:1b,Tags:["egl_egg"],Passengers:[{id:"minecraft:armor_stand",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["egl_explodeme"]}]}
-
-execute as @e[tag=egl_egg,tag=!moving_egg] at @s rotated as @e[type=player,sort=nearest,limit=1] run function smoges:impl/egg_launcher/egg_motion
+execute as @e[type=player,scores={egl_bursts=1..}] at @s anchored eyes run summon egg ^ ^ ^1 {NoGravity:1b,Tags:["egl_egg","projectile"],Passengers:[{id:"minecraft:armor_stand",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["egl_explodeme"]}]}
+execute as @e[tag=egl_egg,tag=!moving_egg] at @s rotated as @e[type=player,sort=nearest,limit=1] run function smoges:impl/projectile_motion
 execute as @e[tag=egl_egg,scores={time=60}] at @s run function smoges:impl/egg_launcher/explode
 execute as @e[tag=egl_egg] at @s unless block ^ ^ ^1 air run function smoges:impl/egg_launcher/explode
 execute as @e[tag=egl_egg] at @s if entity @e[type=!#smoges:nonmob,distance=0..1] run function smoges:impl/egg_launcher/explode
