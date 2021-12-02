@@ -1,8 +1,6 @@
 # Sub-functions for handling more complex stuffs
 function smoges:tick/mob_scan
 function smoges:tick/on_hurt
-execute as @e[tag=!not_rotated,tag=nt_raycast,type=area_effect_cloud] at @s run function smoges:impl/nocturnus/raycasting_handler
-execute as @e[tag=!not_rotated,tag=qn_raycast,type=area_effect_cloud] at @s run function smoges:impl/queen/raycast_handler
 function smoges:tick/custom_attacks
 execute as @a[scores={coas=1..}] run function smoges:tick/on_coas
 function smoges:tick/action_bars
@@ -10,12 +8,14 @@ function smoges:tick/cblock_handler
 function smoges:tick/ccraft_handler
 function smoges:tick/nt_phase_handler
 function smoges:tick/projectile_handler
+execute as @e[type=area_effect_cloud,tag=raycast,tag=!rcs_rotated] at @s run function smoges:impl/raycast_rotator
+execute as @e[type=area_effect_cloud,tag=raycast,tag=rcs_rotated] at @s run function smoges:impl/raycast_assigner
 
 # Increment timers
 scoreboard players add @e[type=!#smoges:nonmob] time 1
 scoreboard players add @e[type=#smoges:tick_despite_nonmob] time 1
 scoreboard players remove @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=1..}] blazeborn_atk 1
-scoreboard players remove @e[tag=nocturnus_phase2,type=phantom,scores={nocturnus_p2_atk=1..}] nocturnus_p2_atk 1
+scoreboard players remove @e[tag=nocturnus,type=phantom,scores={nocturnus_p2_atk=1..}] nocturnus_p2_atk 1
 scoreboard players remove @e[tag=queen,type=stray,scores={queen_atk=1..}] queen_atk 1
 scoreboard players remove @e[tag=leviathan,type=giant,scores={levi_atk=1..}] levi_atk 1
 scoreboard players remove @e[tag=egglord,type=skeleton,scores={egglord_atk=1..}] egglord_atk 1

@@ -52,6 +52,7 @@ execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=60..150
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=160..180}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk3
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=240..290}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk4
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=295..300}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk5
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=340..360}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk6
 
 # MOBS
 
@@ -88,7 +89,7 @@ execute as @e[tag=qn_minion,scores={time=200}] as @s run kill @s
 scoreboard players enable @a uuid1b
 execute as @e[tag=eg_mimic,scores={time=300}] as @s run kill @s
 execute as @e[tag=eg_horde,scores={time=140}] as @s run kill @s
-execute as @e[tag=nt2_minion,scores={time=140}] as @s run kill @s
+execute as @e[tag=nt2_minion,scores={time=200}] as @s run kill @s
 execute as @e[tag=nt2_mimic,scores={time=400}] as @s run kill @s
 
 # PLAYERS
