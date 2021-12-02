@@ -48,7 +48,7 @@ execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distanc
 
 # Nocturnus, Monstrosity of the Night's attacks in Phase 2
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=0..20}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk1
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=60..150}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk2
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=60..140}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk2
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=160..180}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk3
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=240..290}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk4
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=295..300}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk5
