@@ -3,7 +3,7 @@
 (PAPER)   6164002 - Phantom Mount (CHANGE THIS SOON)
 (COAS)    6164003 - Regal Sceptre
 (EPEARL)  6164004 - Enchanted Ender Pearl
-(PMEMB)   6164005 - Enchanted Phantom Membrane
+(P.MEMB)  6164005 - Enchanted Phantom Membrane
 (COAS)    6164006 - Queen's Satchel
 (NETHSWD) 6164007 - Sabre of the Leviathan
 (GI.FRME) 6164008 - Blazeborn Spawning Altar
