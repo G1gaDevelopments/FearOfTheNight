@@ -53,6 +53,7 @@ execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=160..18
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=240..290}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk4
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=295..300}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk5
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=340..360}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk6
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=370..400}] at @s if entity @e[type=player,distance=0..300] run function smoges:impl/nocturnus_phase2/atk7
 
 # MOBS
 
@@ -90,7 +91,10 @@ scoreboard players enable @a uuid1b
 execute as @e[tag=eg_mimic,scores={time=300}] as @s run kill @s
 execute as @e[tag=eg_horde,scores={time=140}] as @s run kill @s
 execute as @e[tag=nt2_minion,scores={time=200}] as @s run kill @s
-execute as @e[tag=nt2_mimic,scores={time=400}] as @s run kill @s
+execute as @e[tag=nt2_mimic,scores={time=175}] as @s run kill @s
+
+execute as @e[tag=nt2_obbyrain] at @s if predicate smoges:chance50 run summon falling_block ^ ^ ^1 {BlockState:{Name:"minecraft:obsidian"},Time:1,DropItem:0b,FallDistance:10f}
+execute as @e[tag=nt2_obbyrain] at @s if predicate smoges:chance10 run summon falling_block ^ ^1 ^1 {BlockState:{Name:"minecraft:fire"},Time:1,DropItem:0b,FallDistance:10f}
 
 # PLAYERS
 
