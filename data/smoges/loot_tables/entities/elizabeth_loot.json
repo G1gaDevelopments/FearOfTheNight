@@ -27,12 +27,23 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Regal Sceptre\",\"color\":\"green\",\"bold\":false,\"italic\":false}'},Unbreakable:1b,Damage:1,CustomModelData:6164003,Enchantments:[{}]}"
-            },
-            {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:6164003,Enchantments:[{}]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Regal Sceptre",
+                  "color": "green",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
             }
           ],
           "conditions": [
@@ -67,12 +78,23 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Queen\\'s Satchel\",\"color\":\"green\",\"bold\":false,\"italic\":false}'},CustomModelData:6164006,Enchantments:[{}]}"
-            },
-            {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:6164006,Enchantments:[{}]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Queen's Satchel",
+                  "color": "green",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
             }
           ],
           "conditions": [
