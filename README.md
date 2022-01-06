@@ -1,7 +1,7 @@
-<h1 align="center">Smoges Pack</h1>
+<h1 align="center">Fear of the Night</h1>
 <p align="center">
 Based datapack for modded survival server by Austxnmcsheep.<br>
-<a href="https://discord.gg/mYTK57yP3A">Discord</a> | <a href="https://mcsrvstat.us/server/smoges.minehut.gg">Server Status</a>
+<a href="https://discord.gg/mYTK57yP3A">Discord</a> | <a href="https://mcsrvstat.us/server/fotn.minehut.gg">Server Status</a>
 </p>
 
 ---
@@ -23,7 +23,7 @@ This datapack is still in an extremely early beta and may be prone to bugs. As s
 ## Installation
 ***THESE INSTRUCTIONS MAY BE PRONE TO CHANGE.***
 
-Go to the [Releases tab](https://github.com/Errorcrafter/smoges/releases) and click on the Assets dropdown. From there, click the `Source code (zip)` link to download Smoges Pack. Use WinRAR or a similar program to unzip the folder. Place the resulting folder in the following directory:
+Go to the [Releases tab](https://github.com/Errorcrafter/fotn/releases) and click on the Assets dropdown. From there, click the `Source code (zip)` link to download fotn Pack. Use WinRAR or a similar program to unzip the folder. Place the resulting folder in the following directory:
 
 - **Singleplayer:** `.minecraft/saves/(your world name here)/datapacks`
 - **Multiplayer:** `(root directory)/world/datapacks`
