@@ -1,7 +1,8 @@
-<h1 align="center">Fear of the Night</h1>
-<p align="center">
-Based datapack for modded survival server by Austxnmcsheep.<br>
-<a href="https://discord.gg/mYTK57yP3A">Discord</a> | <a href="https://mcsrvstat.us/server/fotn.minehut.gg">Server Status</a>
+<div align="center">
+<h1>Fear of the Night</h1>
+<h4>Smoges has shut down, long live Smoges.</h4>
+<p>
+Huge datapack with custom bosses, mobs, items and new lore.
 </p>
 
 ---
@@ -10,8 +11,7 @@ Based datapack for modded survival server by Austxnmcsheep.<br>
 This datapack is still in an extremely early beta and may be prone to bugs. As such, this is probably is not safe to use on a multiplayer server. If you want to use it anyway, please make sure to give me credit.
 
 ## Features
-- 12 custom items
-- 4 custom blocks
+- 16 custom items
 - 12 custom mobs
 - 4(+1) custom bosses
 - Custom crafting machine
@@ -28,7 +28,7 @@ Go to the [Releases tab](https://github.com/Errorcrafter/fotn/releases) and clic
 - **Singleplayer:** `.minecraft/saves/(your world name here)/datapacks`
 - **Multiplayer:** `(root directory)/world/datapacks`
 
-Once you've done that, go ingame and type `/reload` (or, if you use Minehut, `/miecraft:reload`). You're done!
+Once you've done that, go ingame and type `/reload` (or, if you use Minehut, `/minecraft:reload`). You're done!
 
 ## Credits
 - [MCStacker](https://mcstacker.net) and [Minecraft Tools](https://minecraft.tools/en/) for command generation
