@@ -2,7 +2,7 @@
 <h1>Fear of the Night</h1>
 <h4>Smoges has shut down, long live Smoges.</h4>
 <p>
-Huge datapack with custom bosses, mobs, items and new lore.
+Huge datapack with custom bosses, mobs, items and completely new quest lines!
 </p>
 
 ---
