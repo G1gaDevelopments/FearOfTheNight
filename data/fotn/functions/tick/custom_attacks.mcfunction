@@ -39,6 +39,7 @@ kill @e[tag=lv_as_explode]
 execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=0..30}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk1
 execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=50}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk2
 execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk3
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=120..130}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk4
 
 # Handles Egg Lord eggs.
 execute as @e[tag=el_eggspam,scores={time=30}] run kill @s

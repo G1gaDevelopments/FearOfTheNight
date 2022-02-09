@@ -8,8 +8,8 @@ function fotn:tick/cblock_handler
 function fotn:tick/ccraft_handler
 function fotn:tick/nt_phase_handler
 function fotn:tick/projectile_handler
-execute as @e[type=area_effect_cloud,tag=raycast,tag=!rcs_rotated] at @s run function fotn:impl/raycast_rotator
-execute as @e[type=area_effect_cloud,tag=raycast,tag=rcs_rotated] at @s run function fotn:impl/raycast_assigner
+execute as @e[type=area_effect_cloud,tag=raycast,tag=!rcs_rotated] at @s run function fotn:impl/util/raycast_rotator
+execute as @e[type=area_effect_cloud,tag=raycast,tag=rcs_rotated] at @s run function fotn:impl/util/raycast_assigner
 
 # Increment timers
 scoreboard players add @e[type=!#fotn:nonmob] time 1
