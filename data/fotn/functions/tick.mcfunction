@@ -29,7 +29,6 @@ scoreboard players remove @a egl_bursts 1
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!fotn:is_riding_angry_bull]
 kill @e[type=phantom,tag=blazeborn,predicate=!fotn:is_blazeborn_mount]
-kill @e[type=ender_pearl,tag=thrown_ench_epearl,scores={time=50..}]
 kill @e[type=husk,tag=lv_rider,predicate=!fotn:is_leviathan_rider]
 
 # Display bossbars
