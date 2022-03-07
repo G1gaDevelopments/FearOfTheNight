@@ -23,12 +23,15 @@ This datapack is still in an extremely early beta and may be prone to bugs. As s
 ## Installation
 ***THESE INSTRUCTIONS MAY BE PRONE TO CHANGE.***
 
-Go to the [Releases tab](https://github.com/Errorcrafter/fotn/releases) and click on the Assets dropdown. From there, click the `Source code (zip)` link to download fotn Pack. Use WinRAR or a similar program to unzip the folder. Place the resulting folder in the following directory:
+Go to the [Releases tab](https://github.com/Errorcrafter/fotn/releases) and click on the Assets dropdown. From there, follow these steps:
 
-- **Singleplayer:** `.minecraft/saves/(your world name here)/datapacks`
-- **Multiplayer:** `(root directory)/world/datapacks`
 
-Once you've done that, go ingame and type `/reload` (or, if you use Minehut, `/minecraft:reload`). You're done!
+1. Download `NightVisionv3b3.zip` and `FearOfTheNight-v1.3.1Beta.zip`.
+2. Use your archiver of choice to unzip them.
+3. Inside the archives there will be a single folder that contains all the stuff that you need. Drag the folder out of your downloads folder. (dont ask why they probably have the wrong names icba to rename them after the rebrand lol)
+4. Drag the folder you got out of `FearOfTheNight-v1.3.1Beta.zip` into the datapack folder of your world/server, and drag the folder from `NightVisionv3b3.zip` into your resource pack folder.
+
+If these steps somehow still break, I may not be able to help you because for some retarded reason WinRAR and Windows' built in ZIP archiver both make these subfolders. I have no idea why, and I don't know how to fix it. **TLDR: unzip, there will be a folder inside the zip, use that folder.**
 
 ## Credits
 - [MCStacker](https://mcstacker.net) and [Minecraft Tools](https://minecraft.tools/en/) for command generation
