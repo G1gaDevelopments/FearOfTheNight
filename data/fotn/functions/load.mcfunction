@@ -82,6 +82,4 @@ bossbar set nocturnus_phase1 color blue
 bossbar add nocturnus {"text":"Nocturnus, Monstrosity of the Night","color":"dark_blue","bold":true}
 bossbar set nocturnus color blue
 
-say Fear of the Night by G1galovaniac
-say Version 1.3-BETA
-say Changelogs available on Github
+tellraw @p ["",{"text":"Fear Of The Night ","bold":true,"color":"blue"},{"text":"by G1glovaniac","color":"gray"},"\n",{"text":"Version ","color":"gray"},{"text":"1.3.1-BETA","color":"red"},"\n",{"text":"GitHub","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Errorcrafter/FearOfTheNight"}},{"text":" | ","color":"gray"},{"text":"Patch Notes","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Errorcrafter/FearOfTheNight/releases/tag/v1.3.1-BETA"}},{"text":" | ","color":"gray"},{"text":"Wiki (coming soon!)","color":"aqua","clickEvent":{"action":"open_url","value":"https://github.com/Errorcrafter/FearOfTheNight/wiki"}}]
