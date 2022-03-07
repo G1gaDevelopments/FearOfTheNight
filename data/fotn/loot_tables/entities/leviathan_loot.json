@@ -22,7 +22,7 @@
         ]
       },
       {
-        "rolls": 2,
+        "rolls": 1,
         "entries": [
           {
             "type": "minecraft:item",
@@ -37,7 +37,13 @@
                 }
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          
           {
             "type": "minecraft:item",
             "name": "minecraft:experience_bottle",
