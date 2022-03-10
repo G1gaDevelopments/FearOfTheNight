@@ -1,6 +1,4 @@
-execute at @s as @e[type=item,nbt={Item:{id:"minecraft:totem_of_undying"},OnGround:1b}] run tag @s add refill_qst
-execute as @e[type=item,tag=refill_qst] at @s run say giving 1x queen use to @p
-execute as @e[type=item,tag=refill_qst] at @s run scoreboard players add @p qst_uses 1
-execute as @e[type=item,tag=refill_qst] at @s run kill @s
-particle totem_of_undying ~ ~ ~ 0.25 0.25 0.25 0.5 45 force @a
-playsound block.amethyst_cluster.place player @a[distance=..5]
+scoreboard players operation @s qst_uses += @s qst_totems
+tellraw @s ["",{"text":"Added ","color":"blue"},{"score":{"name":"@s","objective":"qst_totems"},"bold":true,"color":"gold"},{"text":" totem(s) to your Queen's Satchel!","color":"blue"}]
+clear @s totem_of_undying
+playsound minecraft:entity.experience_orb.pickup master @s

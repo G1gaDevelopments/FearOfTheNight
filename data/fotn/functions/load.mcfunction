@@ -17,6 +17,7 @@ scoreboard objectives add egl_ammo dummy
 
 # Scoreboards for Queen's Satchel
 scoreboard objectives add qst_uses dummy
+scoreboard objectives add qst_totems dummy
 scoreboard objectives add health health
 
 # Projectile math. I hate this fuck you Timber Forge

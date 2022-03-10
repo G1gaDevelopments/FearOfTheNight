@@ -11,8 +11,7 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomMod
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164003}}}] if entity @s[scores={rgs_cooldown=..0}] run scoreboard players set @s rgs_cooldown 60
 
 # Queen's Satchel
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] if entity @s[scores={qst_cooldown=..0,qst_uses=1..}] run function fotn:impl/queen_bag/consume
-execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] if entity @s[scores={qst_cooldown=..0,qst_uses=1..}] run scoreboard players set @s qst_cooldown 80
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}}] if entity @s[scores={qst_cooldown=..0,qst_totems=1..}] run function fotn:impl/queen_bag/refill
 
 # Egg Launcher TODO: Optimise ammo check
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164016}}}] if entity @s[scores={egl_cooldown=..0,egl_ammo=5..}] run function fotn:impl/egg_launcher/burst
