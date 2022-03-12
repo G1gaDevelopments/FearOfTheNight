@@ -1,25 +1,22 @@
 {
   "type": "crafting_shaped",
   "pattern": [
-    "#X#",
+    " X ",
     "O@O",
     "+++"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:emerald"
-    },
     "X": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:lapis_lazuli"
     },
     "O": {
-      "item": "minecraft:amethyst_shard"
+      "item": "minecraft:diamond"
     },
     "@": {
-      "item": "minecraft:crafting_table"
+      "item": "minecraft:crying_obsidian"
     },
     "+": {
-      "item": "minecraft:soul_sand"
+      "item": "minecraft:obsidian"
     }
   },
   "result": {

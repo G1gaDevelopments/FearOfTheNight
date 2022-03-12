@@ -10,7 +10,7 @@
 
             "conditions": {
 
-                "recipe": "fotn:runecrafter"
+                "recipe": "fotn:advanced_forge"
 
             }
 
@@ -20,7 +20,7 @@
 
     "rewards": {
 
-        "function": "fotn:impl/cblock/runecrafter/obtain"
+        "function": "fotn:impl/cblock/advanced_forge/obtain"
 
     }
 
