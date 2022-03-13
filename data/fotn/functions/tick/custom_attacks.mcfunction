@@ -45,7 +45,7 @@ execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=120..130}] at @s if 
 execute as @e[tag=el_eggspam,scores={time=30}] run kill @s
 
 # Handles Egg Lord absorbing chickens.
-execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] run function fotn:impl/egglord/absorb
+execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] if predicate fotn:chance25 run function fotn:impl/egglord/absorb
 
 # Nocturnus, Monstrosity of the Night's attacks in Phase 2
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=0..20}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk1
