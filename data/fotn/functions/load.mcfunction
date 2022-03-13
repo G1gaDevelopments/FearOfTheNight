@@ -21,27 +21,6 @@ scoreboard objectives add qst_totems dummy
 scoreboard objectives add health health
 
 # Projectile math. I hate this fuck you Timber Forge
-scoreboard objectives add FB_x1 dummy
-scoreboard objectives add FB_x2 dummy
-scoreboard objectives add FB_y1 dummy
-scoreboard objectives add FB_y2 dummy
-scoreboard objectives add FB_z1 dummy
-scoreboard objectives add FB_z2 dummy
-
-scoreboard objectives add AR_x1 dummy
-scoreboard objectives add AR_x2 dummy
-scoreboard objectives add AR_y1 dummy
-scoreboard objectives add AR_y2 dummy
-scoreboard objectives add AR_z1 dummy
-scoreboard objectives add AR_z2 dummy
-
-scoreboard objectives add EG_x1 dummy
-scoreboard objectives add EG_x2 dummy
-scoreboard objectives add EG_y1 dummy
-scoreboard objectives add EG_y2 dummy
-scoreboard objectives add EG_z1 dummy
-scoreboard objectives add EG_z2 dummy
-
 scoreboard objectives add PJ_x1 dummy
 scoreboard objectives add PJ_x2 dummy
 scoreboard objectives add PJ_y1 dummy
@@ -50,16 +29,6 @@ scoreboard objectives add PJ_z1 dummy
 scoreboard objectives add PJ_z2 dummy
 
 # Comparing UUIDS
-scoreboard objectives add uuid1o dummy
-scoreboard objectives add uuid2o dummy
-scoreboard objectives add uuid3o dummy
-scoreboard objectives add uuid4o dummy
-
-scoreboard objectives add uuid1t dummy
-scoreboard objectives add uuid2t dummy
-scoreboard objectives add uuid3t dummy
-scoreboard objectives add uuid4t dummy
-
 scoreboard objectives add uuid1b trigger
 scoreboard objectives add uuid2b trigger
 scoreboard objectives add uuid3b trigger
@@ -67,6 +36,9 @@ scoreboard objectives add uuid4b trigger
 
 # Nocturnus
 scoreboard objectives add nt_remtgts dummy
+
+# LCG
+function fotn:impl/util/lcg/lcg_init
 
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}
