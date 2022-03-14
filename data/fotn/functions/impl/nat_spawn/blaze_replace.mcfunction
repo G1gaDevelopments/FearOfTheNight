@@ -1,4 +1,4 @@
-# 5% chance to enchant endermen
+# 5% chance to enchant Blazes
 execute if predicate fotn:chance5 run tag @s add replace_with_eblz
 #say rohfoihe
 execute as @e[tag=replace_with_eblz] as @s run function fotn:spawn/mob/ench_blaze

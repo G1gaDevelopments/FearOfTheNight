@@ -15,3 +15,4 @@
 (GI.FRME) 6164014 - Egg Lord Spawning Altar
 (EGG)     6164015 - Egg of Reincarnation
 (COAS)    6164016 - Egg Launcher
+(E.BOOK)  6164017 - Tome of Knowledge

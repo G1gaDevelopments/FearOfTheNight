@@ -9,9 +9,9 @@ scoreboard players set #increment LCG.consts 12345
 scoreboard players set #multiplier LCG.consts 1103515245
 
 # #modulus will be the difference between max and min value
-scoreboard players set #modulus LCG.consts 25
+scoreboard players set #modulus LCG.consts 15
 # #mid is exactly what it says it does
-scoreboard players set #mid LCG.consts 13
+scoreboard players set #mid LCG.consts 6
 
 #Get the original seed from an aec's UUID (allows for a different LCG for each world)
 execute unless score #seed LCG.consts = #seed LCG.consts run function fotn:impl/util/lcg/get_seed

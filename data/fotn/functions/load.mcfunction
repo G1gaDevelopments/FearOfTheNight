@@ -37,8 +37,16 @@ scoreboard objectives add uuid4b trigger
 # Nocturnus
 scoreboard objectives add nt_remtgts dummy
 
-# LCG
+# LCG for random spread
 function fotn:impl/util/lcg/lcg_init
+scoreboard objectives add rs_rotation0 dummy
+scoreboard objectives add rs_rotation1 dummy
+
+# Settings system
+function fotn:impl/util/settings_init
+
+# Tome of Knowledge system
+scoreboard objectives add tome_of_knowledge dummy
 
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}
