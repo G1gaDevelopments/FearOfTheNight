@@ -10,6 +10,7 @@ function fotn:tick/nt_phase_handler
 function fotn:tick/projectile_handler
 execute as @e[type=area_effect_cloud,tag=raycast,tag=!rcs_rotated] at @s run function fotn:impl/util/raycast_rotator
 execute as @e[type=area_effect_cloud,tag=raycast,tag=rcs_rotated] at @s run function fotn:impl/util/raycast_assigner
+function fotn:tick/offhand_checks
 
 # Increment timers
 scoreboard players add @e[type=!#fotn:nonmob] time 1
@@ -70,7 +71,3 @@ execute as @a store result score @s qst_totems run clear @s totem_of_undying 0
 
 # Hacky workaround for Nocturnus phase 2 bossbar not working (?)
 execute if entity @e[type=phantom,tag=nocturnus_phase2] run bossbar set nocturnus visible true
-
-# Queen's Satchel healing.
-execute as @e[type=player,nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}]},scores={qst_cooldown=..0}] run function fotn:impl/queen_bag/consume
-execute as @e[type=player,nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6164006}}]}] run function fotn:impl/util/swap_offhand

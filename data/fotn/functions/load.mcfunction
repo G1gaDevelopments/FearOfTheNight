@@ -41,6 +41,7 @@ scoreboard objectives add nt_remtgts dummy
 function fotn:impl/util/lcg/lcg_init
 
 # Tome of Knowledge
+scoreboard objectives add tome_of_knowledge dummy
 
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}
