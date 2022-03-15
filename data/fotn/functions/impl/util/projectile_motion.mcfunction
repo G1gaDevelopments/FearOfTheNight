@@ -9,11 +9,9 @@ execute store result score @s PJ_x1 run data get entity @s Pos[0] 100
 execute store result score @s PJ_y1 run data get entity @s Pos[1] 100
 execute store result score @s PJ_z1 run data get entity @s Pos[2] 100
 
-# Random spread
-execute as @s if score $randomSpread settings = $true settings run function fotn:impl/util/random_spread_handler
+tp @s ^ ^ ^0.1
 
 # Moved forward (to get slope and other stuff)
-execute at @s rotated as @s run tp @s ^ ^ ^0.1
 execute store result score @s PJ_x2 run data get entity @s Pos[0] 100
 execute store result score @s PJ_y2 run data get entity @s Pos[1] 100
 execute store result score @s PJ_z2 run data get entity @s Pos[2] 100
