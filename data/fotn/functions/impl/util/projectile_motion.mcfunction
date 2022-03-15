@@ -1,6 +1,9 @@
 # Handles all projectiles' motion. 
 # TODO: Make all custom mobs use this function instead
 
+# Copy rotations to make random spread work properly
+function fotn:impl/util/copy_rotation_of_shooter
+
 # Initial locations
 execute store result score @s PJ_x1 run data get entity @s Pos[0] 100
 execute store result score @s PJ_y1 run data get entity @s Pos[1] 100
@@ -10,7 +13,7 @@ execute store result score @s PJ_z1 run data get entity @s Pos[2] 100
 execute as @s if score $randomSpread settings = $true settings run function fotn:impl/util/random_spread_handler
 
 # Moved forward (to get slope and other stuff)
-execute at @s run tp @s ^ ^ ^0.1
+execute at @s rotated as @s run tp @s ^ ^ ^0.1
 execute store result score @s PJ_x2 run data get entity @s Pos[0] 100
 execute store result score @s PJ_y2 run data get entity @s Pos[1] 100
 execute store result score @s PJ_z2 run data get entity @s Pos[2] 100

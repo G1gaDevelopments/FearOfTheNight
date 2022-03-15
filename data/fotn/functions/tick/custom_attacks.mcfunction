@@ -8,9 +8,6 @@ execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=80}] at @
 execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=100}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk5
 execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=130..160}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk6
 
-# Handles Blazeborn fireballs.
-execute as @e[tag=bb_fireball,scores={time=30}] as @s run kill @s
-
 # Elizabeth's attacks
 execute as @e[tag=queen,type=stray,scores={queen_atk=0..5}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/queen/atk1
 execute as @e[tag=queen,type=stray,scores={queen_atk=30..35}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/queen/atk2
@@ -20,7 +17,6 @@ execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity 
 
 # Handles Elizabeth arrows.
 execute as @e[type=arrow,scores={time=30}] as @s at @s run scoreboard players enable @a uuid3b
-execute as @e[tag=qn_arrow,scores={time=30},type=spectral_arrow] as @s run kill @s
 
 # Leviathan's attacks
 execute as @e[type=giant,tag=leviathan,scores={levi_atk=0..11}] at @s if entity @e[type=player,distance=0..70] run function fotn:impl/leviathan/atk1
@@ -41,9 +37,6 @@ execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=50}] at @s if entity
 execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk3
 execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=120..130}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk4
 
-# Handles Egg Lord eggs.
-execute as @e[tag=el_eggspam,scores={time=30}] run kill @s
-
 # Handles Egg Lord absorbing chickens.
 execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] if predicate fotn:chance25 run function fotn:impl/egglord/absorb
 
@@ -55,6 +48,9 @@ execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=240..29
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=295..300}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk5
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=340..360}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk6
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=370..400}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk7
+
+# Despawns projectiles
+execute as @e[tag=projectile,scores={time=50}] run kill @s
 
 # MOBS
 
@@ -103,7 +99,7 @@ execute as @e[tag=nt2_obbyrain] at @s if predicate fotn:chance10 run summon fall
 execute as @e[tag=botb_fireball,scores={time=60}] as @s run kill @s
 
 # Egg Launcher
-execute as @e[type=player,scores={egl_bursts=1..}] at @s anchored eyes run summon egg ^ ^ ^1 {NoGravity:1b,Tags:["egl_egg","projectile"],Passengers:[{id:"minecraft:armor_stand",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["egl_explodeme"]}]}
+execute as @e[type=player,scores={egl_bursts=1..}] at @s anchored eyes run summon egg ^ ^ ^1 {NoGravity:1b,Tags:["egl_egg","player_proj"],Passengers:[{id:"minecraft:armor_stand",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["egl_explodeme"]}]}
 execute as @e[tag=egl_egg,scores={time=60}] at @s run function fotn:impl/egg_launcher/explode
 execute as @e[tag=egl_egg] at @s unless block ^ ^ ^1 air run function fotn:impl/egg_launcher/explode
 execute as @e[tag=egl_egg] at @s if entity @e[type=!#fotn:nonmob,distance=0..1] run function fotn:impl/egg_launcher/explode

@@ -1,7 +1,7 @@
 # Projectiles shot in the direction the enemies are facing.
-execute as @e[tag=bb_fireball, tag=!moving_pj] at @s rotated as @e[type=wither_skeleton,tag=blazeborn] run function fotn:impl/util/projectile_motion
-execute as @e[tag=qn_arrow,tag=!moving_pj] at @s rotated as @e[type=stray,tag=queen] run function fotn:impl/util/projectile_motion
-execute as @e[tag=el_eggspam,tag=!moving_pj] at @s rotated as @e[type=skeleton,tag=egglord] run function fotn:impl/util/projectile_motion
+execute as @e[tag=projectile,tag=!moving_pj] at @s rotated as @e[tag=proj_shooter,sort=nearest,limit=1] run function fotn:impl/util/projectile_motion
+
+# Projectiles shot by players
 execute as @e[tag=botb_fireball, tag=!moving_pj] at @s rotated as @e[type=player,sort=nearest,limit=1] run function fotn:impl/util/projectile_motion
 execute as @e[tag=egl_egg,tag=!moving_pj] at @s rotated as @e[type=player,sort=nearest,limit=1] run function fotn:impl/util/projectile_motion
 
