@@ -32,7 +32,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:6164003,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Regal Sceptre\",\"color\":\"green\",\"bold\":false,\"italic\":false}',Lore:['[{\"text\":\"Right click \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to summon lightning on nearby mobs\",\"color\":\"dark_gray\",\"italic\":false}]']},Unbreakable:1b,Damage:1,CustomModelData:6164003,Enchantments:[{}]}"
             },
             {
               "function": "minecraft:set_name",
@@ -83,7 +83,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:6164006,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Queen\\'s Satchel\",\"color\":\"green\",\"bold\":false,\"italic\":false}',Lore:['[{\"text\":\"Right click \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to fill with totems\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Swap into offhand \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to heal\",\"color\":\"dark_gray\",\"italic\":false}]']},CustomModelData:6164006,Enchantments:[{}]}"
             },
             {
               "function": "minecraft:set_name",

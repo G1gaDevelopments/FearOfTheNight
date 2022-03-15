@@ -32,7 +32,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Baton of the Blazeborn\",\"color\":\"gold\",\"italic\":false}'},Unbreakable:1b,CustomModelData:6164001,Enchantments:[{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:13,Operation:0,UUID:[I;-397078336,1969439729,-2104568759,1468810052],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:2,UUID:[I;-321327091,-1087880235,-1774432147,-1278004473],Slot:\"mainhand\"}]}"
+              "tag": "{display:{Name:'{\"text\":\"Baton of the Blazeborn\",\"color\":\"gold\",\"italic\":false}',Lore:['[{\"text\":\"Right click \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to shoot a fireball\",\"color\":\"dark_gray\",\"italic\":false}]']},Unbreakable:1b,CustomModelData:6164001,Enchantments:[{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:13,Operation:0,UUID:[I;-1442125800,911821570,-1575875492,652392353],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:2,UUID:[I;-1363296262,-933147824,-1824556588,810804314],Slot:\"mainhand\"}]}"
             }
           ],
           "conditions": [
