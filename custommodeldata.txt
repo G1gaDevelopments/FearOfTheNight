@@ -16,3 +16,6 @@
 (EGG)     6164015 - Egg of Reincarnation
 (COAS)    6164016 - Egg Launcher
 (BOOK)    6164017 - Tome of Knowledge
+(B.PWDR)  6164018 - Blazeborn Essence
+(QUARTZ)  6164019 - Ender Dragon Scales
+(QUARTZ)  6164020 - Wither Shard
