@@ -40,6 +40,8 @@ scoreboard objectives add nt_remtgts dummy
 # LCG
 function fotn:impl/util/lcg/lcg_init
 
+# Tome of Knowledge
+
 # Bossbars
 bossbar add blazeborn {"text":"Blazeborn of the Depths","color":"gold","bold":true}
 bossbar set blazeborn color yellow

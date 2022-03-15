@@ -32,7 +32,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Baton of the Blazeborn\",\"color\":\"gold\",\"italic\":false}'},Unbreakable:1b,CustomModelData:6164001,Enchantments:[{id:\"minecraft:sharpness\",lvl:5s},{id:\"minecraft:smite\",lvl:5s},{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:13,Operation:0,UUID:[I;1172835629,1617379453,-1293350322,1556014808],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:2,UUID:[I;2024151438,-652262621,-1440290541,-252258970],Slot:\"mainhand\"}]}"
+              "tag": "{display:{Name:'{\"text\":\"Baton of the Blazeborn\",\"color\":\"gold\",\"italic\":false}'},Unbreakable:1b,CustomModelData:6164001,Enchantments:[{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:10s}],AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:13,Operation:0,UUID:[I;-397078336,1969439729,-2104568759,1468810052],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:2,UUID:[I;-321327091,-1087880235,-1774432147,-1278004473],Slot:\"mainhand\"}]}"
             }
           ],
           "conditions": [
@@ -49,7 +49,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 2,
           "name": "minecraft:blaze_powder",
           "functions": [
             {
@@ -77,7 +76,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:blaze_rod",
           "functions": [
             {
