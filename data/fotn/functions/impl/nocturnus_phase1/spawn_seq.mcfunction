@@ -12,8 +12,8 @@ execute as @e[type=armor_stand,tag=nt1_towerhere] at @s run setblock ~ ~ ~ struc
 
 # Random tower rotation
 execute as @e[type=armor_stand,tag=nt1_towerhere] at @s run say test
-execute as @e[type=armor_stand,tag=nt1_towerhere] at @s if predicate fotn:chance10 run data merge block ~ ~ ~ {mirror:"FRONT_BACK"}
-execute as @e[type=armor_stand,tag=nt1_towerhere] at @s if predicate fotn:chance10 run data merge block ~ ~ ~ {mirror:"LEFT_RIGHT"}
+execute as @e[type=armor_stand,tag=nt1_towerhere] at @s if predicate fotn:rng/chance10 run data merge block ~ ~ ~ {mirror:"FRONT_BACK"}
+execute as @e[type=armor_stand,tag=nt1_towerhere] at @s if predicate fotn:rng/chance10 run data merge block ~ ~ ~ {mirror:"LEFT_RIGHT"}
 
 # Spawn in structure and ad crystal
 execute as @e[type=armor_stand,tag=nt1_towerhere] at @s run setblock ~ ~1 ~ redstone_block

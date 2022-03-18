@@ -1,5 +1,5 @@
 # 5% chance to enchant endermen
-execute if predicate fotn:chance5 run tag @s add replace_with_eedm
+execute if predicate fotn:rng/chance5 run tag @s add replace_with_eedm
 #say rohfoihe
 #execute as @e[tag=replace_with_eedm] as @s run say bai
 execute as @e[tag=replace_with_eedm] as @s run function fotn:spawn/mob/ench_enderman

@@ -2,7 +2,7 @@
 execute at @s run tp ^ ^ ^0.5
 particle minecraft:smoke ^ ^ ^-0.2 0 0 0 0.1 1 force @a
 particle minecraft:flame ~ ~ ~ 0 0 0 0.1 1 force @a
-execute if predicate fotn:chance10 run playsound entity.ender_dragon.flap hostile @a[distance=..10]
+execute if predicate fotn:rng/chance10 run playsound entity.ender_dragon.flap hostile @a[distance=..10]
 
 # On entity
 execute if entity @e[type=player,distance=0..1] run particle minecraft:explosion ~ ~ ~ 0 0 0 0.1 1 force @a

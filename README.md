@@ -35,10 +35,11 @@ If these steps somehow still break, I may not be able to help you because for so
 
 ## Credits
 - [MCStacker](https://mcstacker.net) and [Minecraft Tools](https://minecraft.tools/en/) for command generation
-- [Jragon014](https://www.youtube.com/channel/UC_LBXGLs8Sa0opJHFVDVBqA) for a bunch of tutorials on stuff (i forgot which stuff) and also code for the Skeletal Assassin and right-click detection.
-- [Timber Forge](https://www.youtube.com/c/TimberForge) for tutorials on custon crafting recipes, custom blocks and items, raytracing and custom boss attacks.
-- Austxn, The_RealChairman, Merrical and AlmanaX21 for most of the ideas in this pack.
-- `vdvman1#9510`, `MrPingouin#9813`, `InQuognito#0621` and all the other cool people from the Minecraft Commands Discord server for putting up with my retarded questions
+- [Jragon014](https://www.youtube.com/channel/UC_LBXGLs8Sa0opJHFVDVBqA) for a bunch of tutorials on stuff (i forgot which stuff) and also code for the Skeletal Assassin and right-click detection
+- [Timber Forge](https://www.youtube.com/c/TimberForge) for tutorials on custon crafting recipes, custom blocks and items, raytracing and custom boss attacks
+- PeakyBlinda, The_RealChairman, Merrical and AlmanaX21 for most of the ideas in this pack
+- `vdvman1#9510`, `MrPingouin#9813`, `InQuognito#0621`, `ExpertCoder#0528` and all the other cool people from the Minecraft Commands Discord server for putting up with my retarded questions
+- `NookMileNadia~#7930` for advice regarding optimizations
 
 ## Contributing and Usage
 If for some reason you want to ruin your GitHub stats just open a PR and I'll merge it if it's good.

@@ -27,6 +27,16 @@ scoreboard players remove @a qst_cooldown 1
 scoreboard players remove @a egl_cooldown 1
 scoreboard players remove @a egl_bursts 1
 
+##### START OF OPTIMIZATION SECTION
+
+# Gives player IDs
+execute as @a unless score @s player_id = @s player_id run function fotn:tick/assign_player_ids
+
+# Detect item switch
+execute as @a run function fotn:on_event/_event_handlers/item_switch_handler
+
+##### END OF OPTIMIZATION SECTION
+
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!fotn:is_riding_angry_bull]
 kill @e[type=phantom,tag=blazeborn,predicate=!fotn:is_blazeborn_mount]
@@ -63,7 +73,7 @@ execute unless entity @e[tag=queen] run gamerule doDaylightCycle true
 # Detects summoning runes/items near summoning altars.
 execute as @e[type=glow_item_frame,tag=bb_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{CustomModelData:6164011},Count:1b},OnGround:1b},distance=..2] run function fotn:impl/blazeborn/summon_seq
 execute as @e[type=glow_item_frame,tag=lv_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{CustomModelData:6164013},Count:1b},OnGround:1b},distance=..2] run function fotn:impl/leviathan/summon_seq
-execute as @e[type=glow_item_frame,tag=eg_spawner] at @s if entity @e[type=egg,nbt={Item:{id:"minecraft:egg",tag:{CustomModelData:6164015}}},distance=..2] if predicate fotn:chance25 run function fotn:impl/egglord/summon_seq
+execute as @e[type=glow_item_frame,tag=eg_spawner] at @s if entity @e[type=egg,nbt={Item:{id:"minecraft:egg",tag:{CustomModelData:6164015}}},distance=..2] if predicate fotn:rng/chance25 run function fotn:impl/egglord/summon_seq
 
 # Counts ammo items in everyones' inventory (for Egg Launcher and Queen's Satchel)
 execute as @a store result score @s egl_ammo run clear @s egg 0

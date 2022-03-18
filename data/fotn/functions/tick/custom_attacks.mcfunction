@@ -38,7 +38,7 @@ execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if en
 execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=120..130}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk4
 
 # Handles Egg Lord absorbing chickens.
-execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] if predicate fotn:chance25 run function fotn:impl/egglord/absorb
+execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] if predicate fotn:rng/chance25 run function fotn:impl/egglord/absorb
 
 # Nocturnus, Monstrosity of the Night's attacks in Phase 2
 execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=0..20}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk1
@@ -67,7 +67,7 @@ execute as @e[tag=assassin,scores={time=600}] as @s run scoreboard players set @
 
 # Knight of Nocturnus attacks
 execute at @a if entity @e[tag=nt_knight,scores={time=100},distance=..20] run summon lightning_bolt
-execute as @e[tag=nt_knight,scores={time=100}] if predicate fotn:chance50 run say Glory to Nocturnus!
+execute as @e[tag=nt_knight,scores={time=100}] if predicate fotn:rng/chance50 run say Glory to Nocturnus!
 execute as @e[tag=nt_knight,scores={time=101}] as @s run scoreboard players set @s time 0
 
 # Enchanted Endermen
@@ -90,8 +90,8 @@ execute as @e[tag=eg_horde,scores={time=140}] as @s run kill @s
 execute as @e[tag=nt2_minion,scores={time=200}] as @s run kill @s
 execute as @e[tag=nt2_mimic,scores={time=175}] as @s run kill @s
 
-execute as @e[tag=nt2_obbyrain] at @s if predicate fotn:chance50 run summon falling_block ^ ^ ^1 {BlockState:{Name:"minecraft:obsidian"},Time:1,DropItem:0b,FallDistance:10f}
-execute as @e[tag=nt2_obbyrain] at @s if predicate fotn:chance10 run summon falling_block ^ ^1 ^1 {BlockState:{Name:"minecraft:fire"},Time:1,DropItem:0b,FallDistance:10f}
+execute as @e[tag=nt2_obbyrain] at @s if predicate fotn:rng/chance50 run summon falling_block ^ ^ ^1 {BlockState:{Name:"minecraft:obsidian"},Time:1,DropItem:0b,FallDistance:10f}
+execute as @e[tag=nt2_obbyrain] at @s if predicate fotn:rng/chance10 run summon falling_block ^ ^1 ^1 {BlockState:{Name:"minecraft:fire"},Time:1,DropItem:0b,FallDistance:10f}
 
 # PLAYERS
 

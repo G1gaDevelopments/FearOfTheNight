@@ -1,7 +1,7 @@
 # Moves the slowness ray forward and handles collisions.
 execute at @s run tp ^ ^ ^0.5
 particle minecraft:soul ~ ~ ~ 0 0 0 0.1 1 force @a
-execute if predicate fotn:chance10 run playsound entity.ender_dragon.flap hostile @a[distance=..10]
+execute if predicate fotn:rng/chance10 run playsound entity.ender_dragon.flap hostile @a[distance=..10]
 
 # On entity
 execute if entity @e[type=player,distance=0..1] run particle minecraft:explosion ~ ~ ~ 0 0 0 0.1 1 force @a

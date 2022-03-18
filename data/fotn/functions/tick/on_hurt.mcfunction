@@ -10,5 +10,5 @@ execute at @e[type=blaze,tag=ench_blaze,nbt={HurtTime:10s}] as @a[distance=..5] 
 execute at @e[type=blaze,tag=ench_blaze,nbt={HurtTime:10s}] as @a[distance=..5] at @s run say fjiewhffhij
 
 # Egg Lord can spawn reinforcements when hurt
-execute at @e[type=skeleton,tag=egglord,nbt={HurtTime:10s}] if predicate fotn:chance10 run function fotn:impl/egglord/hurt1
-execute at @e[type=skeleton,tag=egglord,nbt={HurtTime:10s}] if predicate fotn:chance10 run function fotn:impl/egglord/hurt2
+execute at @e[type=skeleton,tag=egglord,nbt={HurtTime:10s}] if predicate fotn:rng/chance10 run function fotn:impl/egglord/hurt1
+execute at @e[type=skeleton,tag=egglord,nbt={HurtTime:10s}] if predicate fotn:rng/chance10 run function fotn:impl/egglord/hurt2
