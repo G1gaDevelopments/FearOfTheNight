@@ -32,8 +32,9 @@ scoreboard players remove @a egl_bursts 1
 # Gives player IDs
 execute as @a unless score @s player_id = @s player_id run function fotn:tick/assign_player_ids
 
-# Detect item switch
+# Detect various events
 execute as @a run function fotn:on_event/_event_handlers/item_switch_handler
+execute as @a[advancements={fotn:util/on_inventory_change=true}] run function fotn:on_event/_event_handlers/inventory_change_handler
 
 ##### END OF OPTIMIZATION SECTION
 
