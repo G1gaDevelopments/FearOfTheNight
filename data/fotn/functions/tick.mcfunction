@@ -5,7 +5,7 @@ function fotn:tick/custom_attacks
 execute as @a[scores={coas=1..}] run function fotn:tick/on_coas
 function fotn:tick/action_bars
 function fotn:tick/cblock_handler
-function fotn:tick/ccraft_handler
+#function fotn:tick/ccraft_handler
 function fotn:tick/nt_phase_handler
 function fotn:tick/projectile_handler
 execute as @e[type=area_effect_cloud,tag=raycast,tag=!rcs_rotated] at @s run function fotn:impl/util/raycast_rotator
@@ -35,6 +35,7 @@ execute as @a unless score @s player_id = @s player_id run function fotn:tick/as
 # Detect various events
 execute as @a run function fotn:on_event/_event_handlers/item_switch_handler
 execute as @a[advancements={fotn:util/on_inventory_change=true}] run function fotn:on_event/_event_handlers/inventory_change_handler
+execute as @e[type=glow_item_frame,tag=advanced_forge] run function fotn:on_event/_event_handlers/advforge_change_handler
 
 ##### END OF OPTIMIZATION SECTION
 
