@@ -105,6 +105,6 @@ execute as @e[tag=egl_egg] at @s unless block ^ ^ ^1 air run function fotn:impl/
 execute as @e[tag=egl_egg] at @s if entity @e[type=!#fotn:nonmob,distance=0..1] run function fotn:impl/egg_launcher/explode
 execute as @e[tag=egl_egg,scores={time=25..}] at @s if entity @e[type=player,tag=!egl_firing,distance=0..1] run function fotn:impl/egg_launcher/explode
 
-execute as @e[type=armor_stand,tag=egl_explodeme,predicate=!fotn:is_egl_projectile] run function fotn:impl/egg_launcher/explode
+execute as @e[type=armor_stand,tag=egl_explodeme,predicate=!fotn:is_rider] run function fotn:impl/egg_launcher/explode
 
 tag @e[type=player,scores={egl_bursts=..0},tag=egl_firing] remove egl_firing
