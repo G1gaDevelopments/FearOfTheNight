@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:phantom_membrane",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Enchanted Phantom Membrane\",\"color\":\"aqua\",\"italic\":false}'},CustomModelData:6164005,Enchantments:[{}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{display:{Name:'{"text":"Regal Sceptre","color":"green","bold":false,"italic":false}',Lore:['[{"text":"Right click ","color":"blue","italic":false},{"text":"to summon lightning on nearby mobs","color":"dark_gray","italic":false}]']},Unbreakable:1b,Damage:1,CustomModelData:6164003,Enchantments:[{}]} 1

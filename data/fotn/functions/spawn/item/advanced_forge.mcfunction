@@ -1,1 +1,0 @@
-give @s glow_item_frame{display:{Name:'{"text":"Advanced Forge","color":"gold","bold":false,"italic":false}'},CustomModelData:6164010,EntityTag:{Silent:1b,Tags:["advanced_forge"],Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{CustomModelData:6164010}},Invulnerable:1b,Invisible:1b,Fixed:1b}} 1

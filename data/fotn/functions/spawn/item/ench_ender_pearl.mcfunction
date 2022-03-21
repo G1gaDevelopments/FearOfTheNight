@@ -1,1 +1,0 @@
-give @s ender_pearl{display:{Name:'{"text":"Enchanted Ender Pearl","color":"aqua","italic":false}'},CustomModelData:6164004,Enchantments:[{}]} 1

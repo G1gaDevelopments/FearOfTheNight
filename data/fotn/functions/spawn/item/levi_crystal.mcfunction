@@ -1,1 +1,0 @@
-give @s quartz{display:{Name:'{"text":"Leviathan Summoning Crystal","color":"dark_green","bold":false,"italic":false}',Lore:['[{"text":"Throw me onto a","color":"dark_gray","italic":false},{"text":" Leviathan Spawning Altar","color":"dark_green","italic":false}]']},CustomModelData:6164013} 1

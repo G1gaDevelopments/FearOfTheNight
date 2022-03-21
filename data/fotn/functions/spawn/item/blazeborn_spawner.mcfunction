@@ -1,1 +1,0 @@
-give @s glow_item_frame{display:{Name:'{"text":"Blazeborn Spawning Altar","color":"light_purple","bold":false,"italic":false}'},CustomModelData:6164008,EntityTag:{Silent:1b,Tags:["bb_spawner"],Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{CustomModelData:6164008}},Invulnerable:1b,Invisible:1b,Fixed:1b}} 1

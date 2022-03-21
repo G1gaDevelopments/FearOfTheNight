@@ -53,7 +53,7 @@ bossbar set queen max 130
 bossbar set leviathan players @a
 bossbar set leviathan max 400
 bossbar set egglord players @a
-bossbar set egglord max 500
+bossbar set egglord max 300
 
 # Increment bossbars
 execute store result bossbar blazeborn value as @e[tag=blazeborn,type=wither_skeleton,limit=1] run data get entity @s Health
