@@ -2,5 +2,5 @@
 # @s - the player
 say h
 tag @s remove holding_item
-data modify storage fotn:inventory_cache HeldItem set value {id:"minecraft:air",Count:1b}
+data remove storage fotn:inventory_cache HeldItem
 function fotn:on_event/item_switch/main

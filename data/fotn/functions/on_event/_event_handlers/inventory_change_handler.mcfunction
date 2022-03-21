@@ -2,8 +2,8 @@
 # @s - a player who has changed their inventory
 
 # Offhand
-execute if predicate fotn:util/has_empty_offhand if entity @s[tag=holding_offhand] run function fotn:on_event/empty_offhand/main
-execute unless predicate fotn:util/has_empty_offhand store success score @s item_change_compare run data modify storage fotn:inventory_cache OffhandItem set from entity @s Inventory[{Slot:-106b}]
+execute if predicate fotn:util/has_empty_offhand if entity @s[tag=empty_offhand] run function fotn:on_event/empty_offhand/main
+execute store success score @s item_change_compare run data modify storage fotn:inventory_cache OffhandItem set from entity @s Inventory[{Slot:-106b}]
 execute at @s if score @s item_change_compare matches 1 run function fotn:on_event/offhand_switch/main
 
 # Misc inventory change
