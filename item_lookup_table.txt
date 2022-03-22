@@ -1,0 +1,24 @@
+Lookup table for various custom items FOTN adds.
+IDs are in format (CustomModelData) | (FotnID)
+
+(COAS)    6164001 |  1 - Baton of the Blazeborn
+(IRONSWD) 6164002 |  0 - Royal Rapier
+(PAPER)   6164002 |  0 - Phantom Mount (CHANGE THIS SOON)
+(COAS)    6164003 |  2 - Regal Sceptre
+(EPEARL)  6164004 |  0 - Enchanted Ender Pearl
+(P.MEMB)  6164005 |  0 - Enchanted Phantom Membrane
+(COAS)    6164006 |  3 - Queen's Satchel
+(NETHSWD) 6164007 |  0 - Sabre of the Leviathan
+(GI.FRME) 6164008 |  0 - Blazeborn Spawning Altar
+(B.ROD)   6164009 |  0 - Enchanted Blaze Rod
+(GI.FRME) 6164010 |  0 - Advanced Forge
+(QUARTZ)  6164011 |  0 - Blazeborn Summoning Crystal
+(GI.FRME) 6164012 |  0 - Leviathan Spawning Altar
+(QUARTZ)  6164013 |  0 - Leviathan Summoning Crystal
+(GI.FRME) 6164014 |  0 - Egg Lord Spawning Altar
+(EGG)     6164015 |  0 - Egg of Reincarnation
+(COAS)    6164016 |  4 - Egg Launcher
+(BOOK)    6164017 |  5 - Tome of Knowledge
+(B.PWDR)  6164018 |  0 - Blazeborn Essence [NYI]
+(QUARTZ)  6164019 |  0 - Ender Dragon Scales [NYI]
+(QUARTZ)  6164020 |  0 - Wither Shard [NYI]

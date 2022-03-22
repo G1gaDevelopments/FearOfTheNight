@@ -1,2 +1,3 @@
 execute if entity @p[scores={tome_of_knowledge=2..}] run playsound minecraft:entity.iron_golem.repair master @a
-execute if entity @p[scores={tome_of_knowledge=2..}] run data modify block ~ ~ ~ Items set value [{Slot:4b,id:"minecraft:egg",tag:{display:{Name:'{"text":"Egg Of Reincarnation","color":"yellow","italic":false}',Lore:['[{"text":"Throw me at a ","color":"dark_gray","italic": false},{"text":"Egg Lord Summoning Altar","color":"yellow","italic": false}]','[{"text":"for a 25% chance of spawning ","color":"dark_gray","italic": false},{"text":"The New Egg Lord","color":"yellow","italic": false}]']},CustomModelData:6164015,Enchantments:[{}]},Count:1b}]
+execute if entity @p[scores={tome_of_knowledge=2..}] run data modify block ~ ~ ~ Items set value []
+execute if entity @p[scores={tome_of_knowledge=2..}] run loot replace block ~ ~ ~ container.4 loot fotn:admin/egg_of_reincarnation

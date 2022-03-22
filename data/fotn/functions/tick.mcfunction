@@ -1,6 +1,6 @@
 # Sub-functions for handling more complex stuffs
 function fotn:tick/mob_scan
-function fotn:tick/on_hurt
+execute as @e[nbt={HurtTime:10s}] run function fotn:tick/on_hurt
 function fotn:tick/custom_attacks
 execute as @a[scores={coas=1..}] run function fotn:tick/on_coas
 function fotn:tick/action_bars
@@ -11,7 +11,7 @@ execute as @e[tag=projectile,tag=!moving_pj] run function fotn:tick/projectile_h
 execute as @e[tag=player_proj,tag=!moving_pj] run function fotn:tick/projectile_handler
 execute as @e[type=area_effect_cloud,tag=raycast,tag=!rcs_rotated] at @s run function fotn:impl/util/raycast_rotator
 execute as @e[type=area_effect_cloud,tag=raycast,tag=rcs_rotated] at @s run function fotn:impl/util/raycast_assigner
-function fotn:tick/offhand_checks
+#function fotn:tick/offhand_checks
 
 # Increment timers
 scoreboard players add @e[type=!#fotn:nonmob] time 1

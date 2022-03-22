@@ -1,86 +1,84 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:netherite_sword",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Sabre of the Leviathan\",\"color\":\"dark_green\",\"bold\":false,\"italic\":false}'},Unbreakable:1b,CustomModelData:6164007,Enchantments:[{id:\"minecraft:sharpness\",lvl:2s},{id:\"minecraft:knockback\",lvl:10s},{id:\"minecraft:sweeping\",lvl:100s}],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.6,Operation:1,UUID:[I;1684013515,1665026376,-1700666570,-1607272793],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.85,Operation:1,UUID:[I;-521595068,1078478704,-1256651030,475995184],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:30,Operation:0,UUID:[I;1929013045,-288536379,-1613740345,296989655],Slot:\"mainhand\"}]}"
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sabre of the Leviathan\",\"color\":\"dark_green\",\"bold\":false,\"italic\":false}'},Unbreakable:1b,CustomModelData:6164007,Enchantments:[{id:\"minecraft:sharpness\",lvl:2s},{id:\"minecraft:knockback\",lvl:10s},{id:\"minecraft:sweeping\",lvl:100s}],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.6,Operation:1,UUID:[I;1684013515,1665026376,-1700666570,-1607272793],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.85,Operation:1,UUID:[I;-521595068,1078478704,-1256651030,475995184],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:30,Operation:0,UUID:[I;1929013045,-288536379,-1613740345,296989655],Slot:\"mainhand\"}]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 40,
+                "max": 90
               }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 20,
+                "max": 50
               }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:rotten_flesh",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "type": "minecraft:uniform",
-                  "min": 40,
-                  "max": 90
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:experience_bottle",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "type": "minecraft:uniform",
-                  "min": 20,
-                  "max": 50
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:book",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'[{\"text\":\"Tome of Knowledge\",\"color\":\"blue\",\"italic\":false},{\"text\":\" Tier II\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Swap into offhand \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to upgrade your \",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"},{\"text\":\"Tome of Knowledge\",\"color\":\"dark_green\",\"italic\":false},{\"text\":\".\",\"color\":\"dark_gray\"}]']},CustomModelData:6164017,tk_tier:2}"
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:random_chance",
-                "chance": 0.25
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Tome of Knowledge\",\"color\":\"blue\",\"italic\":false},{\"text\":\" Tier II\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Swap into offhand \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to upgrade your \",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"},{\"text\":\"Tome of Knowledge\",\"color\":\"dark_green\",\"italic\":false},{\"text\":\".\",\"color\":\"dark_gray\"}]']},CustomModelData:6164017,tk_tier:2,HasFotnOffhandAbility:1b,FotnID:5}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

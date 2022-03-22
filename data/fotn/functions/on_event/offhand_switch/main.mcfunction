@@ -1,3 +1,7 @@
-say offhand switch
+# Run as all players who have changec the item in their offhand.
+# @s - the player who changed the item in their offhand
 execute unless predicate fotn:util/has_empty_offhand run tag @s add holding_offhand
-execute at @s as @e[type=marker,tag=!no_id] run function fotn:on_event/offhand_switch/update_score
+
+# Assigns offhand_fotn_item score if the player is holding an item with mainhand (rightclick) abilities.
+execute unless predicate fotn:util/is_holding_offhand_ability_item run scoreboard players set @s offhand_fotn_item 0
+execute if predicate fotn:util/is_holding_offhand_ability_item store result score @s offhand_fotn_item run data get entity @s Inventory[{Slot:-106b}].tag.FotnID
