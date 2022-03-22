@@ -8,6 +8,7 @@ execute unless score $currentID player_id = $currentID player_id run scoreboard 
 # Scoreboards for detecting FOTN items with abilitites
 scoreboard objectives add held_fotn_item dummy
 scoreboard objectives add offhand_fotn_item dummy
+scoreboard objectives add offhand_tk_tier dummy
 
 # Forceloads 0 0 chunk (trolling)
 forceload add 0 0
