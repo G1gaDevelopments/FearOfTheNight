@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Enchanted Ender Pearl\",\"color\":\"aqua\",\"italic\":false}'},CustomModelData:6164004,Enchantments:[{}]}"
+                "tag": "{display:{Name:'{\"text\":\"Enchanted Ender Pearl\",\"color\":\"aqua\",\"italic\":false}'},CustomModelData:6164004,Enchantments:[{}]},IsFotnItem:1b,FotnID:4"
               }
             ]
           }

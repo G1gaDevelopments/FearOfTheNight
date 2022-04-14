@@ -4,7 +4,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "nbt": "{HasFotnMainhandAbility:1b}"
+                "nbt": "{IsFotnItem:1b}"
             }
         }
     }

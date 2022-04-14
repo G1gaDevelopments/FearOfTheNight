@@ -4,7 +4,7 @@
     "predicate": {
         "equipment": {
             "offhand": {
-                "nbt": "{HasFotnOffhandAbility:1b}"
+                "nbt": "{IsFotnItem:1b}"
             }
         }
     }
