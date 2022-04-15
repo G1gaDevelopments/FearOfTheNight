@@ -10,7 +10,6 @@ execute as @e[tag=projectile,tag=!moving_pj] run function fotn:tick/projectile_h
 execute as @e[tag=player_proj,tag=!moving_pj] run function fotn:tick/projectile_handler
 execute as @e[type=area_effect_cloud,tag=raycast,tag=!rcs_rotated] at @s run function fotn:impl/util/raycast_rotator
 execute as @e[type=area_effect_cloud,tag=raycast,tag=rcs_rotated] at @s run function fotn:impl/util/raycast_assigner
-function fotn:tick/offhand_checks
 
 # Increment timers
 scoreboard players add @e[type=!#fotn:nonmob] time 1
@@ -27,17 +26,14 @@ scoreboard players remove @a qst_cooldown 1
 scoreboard players remove @a egl_cooldown 1
 scoreboard players remove @a egl_bursts 1
 
-##### START OF OPTIMIZATION SECTION
-
 # Gives player IDs
 execute as @a unless score @s player_id = @s player_id run function fotn:tick/assign_player_ids
 
-# Detect various events
+# Event handlers
 execute as @a run function fotn:on_event/_event_handlers/item_switch_handler
 execute as @a[advancements={fotn:util/on_inventory_change=true}] run function fotn:on_event/_event_handlers/inventory_change_handler
+function fotn:on_event/offhand_switch/offhand_checks
 execute as @e[type=glow_item_frame,tag=advanced_forge] run function fotn:on_event/_event_handlers/advforge_change_handler
-
-##### END OF OPTIMIZATION SECTION
 
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!fotn:is_rider]
