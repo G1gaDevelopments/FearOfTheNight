@@ -1,0 +1,1 @@
+summon blaze ~ ~5 ~ {Health:5f,Tags:["bb_minion","scanned"],Attributes:[{Name:"generic.max_health",Base:5}]}
