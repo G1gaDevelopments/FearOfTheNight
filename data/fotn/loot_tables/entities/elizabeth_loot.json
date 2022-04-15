@@ -32,7 +32,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Regal Sceptre\",\"color\":\"green\",\"bold\":false,\"italic\":false}',Lore:['[{\"text\":\"Right click \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to summon lightning on nearby mobs\",\"color\":\"dark_gray\",\"italic\":false}]']},Unbreakable:1b,Damage:1,CustomModelData:6164003,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Regal Sceptre\",\"color\":\"green\",\"bold\":false,\"italic\":false}',Lore:['[{\"text\":\"Right click \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to summon lightning on nearby mobs\",\"color\":\"dark_gray\",\"italic\":false}]']},Unbreakable:1b,Damage:1,CustomModelData:6164003,Enchantments:[{}]},IsFotnItem:1b,FotnID:3"
             },
             {
               "function": "minecraft:set_name",
@@ -63,7 +63,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Royal Rapier\",\"color\":\"green\",\"bold\":false,\"italic\":false}'},Damage:1,CustomModelData:6164002,Enchantments:[{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:sweeping\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:mending\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.5,Operation:1,UUID:[I;1982264554,1667321588,-1503955951,1392044165],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:25,Operation:0,UUID:[I;1224170113,-2062532552,-1147005809,-485177486],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:1,Operation:2,UUID:[I;-1346838277,-84721074,-1355772570,1626936339],Slot:\"mainhand\"}]}"
+              "tag": "{display:{Name:'{\"text\":\"Royal Rapier\",\"color\":\"green\",\"bold\":false,\"italic\":false}'},Damage:1,CustomModelData:6164002,Enchantments:[{id:\"minecraft:knockback\",lvl:3s},{id:\"minecraft:sweeping\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:mending\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.5,Operation:1,UUID:[I;1982264554,1667321588,-1503955951,1392044165],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:25,Operation:0,UUID:[I;1224170113,-2062532552,-1147005809,-485177486],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:1,Operation:2,UUID:[I;-1346838277,-84721074,-1355772570,1626936339],Slot:\"mainhand\"}],IsFotnItem:1b,FotnID:2}"
             }
           ],
           "conditions": [
@@ -83,7 +83,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Queen\\'s Satchel\",\"color\":\"green\",\"bold\":false,\"italic\":false}',Lore:['[{\"text\":\"Right click \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to fill with totems\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Swap into offhand \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to heal\",\"color\":\"dark_gray\",\"italic\":false}]']},CustomModelData:6164006,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Queen\\'s Satchel\",\"color\":\"green\",\"bold\":false,\"italic\":false}',Lore:['[{\"text\":\"Right click \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to fill with totems\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Swap into offhand \",\"color\":\"blue\",\"italic\":false},{\"text\":\"to heal\",\"color\":\"dark_gray\",\"italic\":false}]']},CustomModelData:6164006,Enchantments:[{}],IsFotnItem:1b,FotnID:6}"
             },
             {
               "function": "minecraft:set_name",

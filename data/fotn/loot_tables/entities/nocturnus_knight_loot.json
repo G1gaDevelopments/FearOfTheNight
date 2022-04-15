@@ -28,7 +28,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Enchanted Phantom Membrane\",\"color\":\"aqua\",\"italic\":false}'},CustomModelData:6164005,Enchantments:[{}]}"
+                "tag": "{display:{Name:'{\"text\":\"Enchanted Phantom Membrane\",\"color\":\"aqua\",\"italic\":false}'},CustomModelData:6164005,Enchantments:[{}],IsFotnItem:1b,FotnID:5}"
               }
             ]
           }
