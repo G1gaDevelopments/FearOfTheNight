@@ -1,6 +1,6 @@
 # Generic player hurt call
 scoreboard players enable @a uuid4b
-say h
+
 # Enchanted Endermen give nausea and blindness when attacked
 execute at @s[type=enderman,tag=ench_enderman] as @a[distance=..3] as @s run effect give @s nausea 2 1
 execute at @s[type=enderman,tag=ench_enderman] as @a[distance=..3] as @s run effect give @s blindness 2 1

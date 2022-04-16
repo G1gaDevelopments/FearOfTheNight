@@ -9,6 +9,6 @@ execute as @e[type=chicken,tag=!scanned,sort=random] as @s at @s run scoreboard 
 execute as @e[type=blaze,tag=!scanned,sort=random] at @s run function fotn:impl/nat_spawn/blaze_replace
 
 # Get thrown enchanted ender pearls.
-execute as @e[type=ender_pearl,tag=!scanned,sort=random,nbt={Item:{tag:{CustomModelData:6164004}}}] at @s run tag @s add thrown_ench_epearl
+execute as @e[type=ender_pearl,tag=!scanned,sort=random,nbt={Item:{tag:{FotnID:4}}}] at @s run tag @s add thrown_ench_epearl
 execute as @e[type=ender_pearl,tag=thrown_ench_epearl,scores={time=1}] run data merge entity @s {NoGravity:1b}
 execute as @e[type=ender_pearl,tag=thrown_ench_epearl,scores={time=50}] run data merge entity @s {NoGravity:0b}
