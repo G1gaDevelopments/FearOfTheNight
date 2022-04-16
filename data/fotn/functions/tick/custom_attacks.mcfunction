@@ -8,6 +8,8 @@ execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=80}] at @
 execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=100}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk5
 execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=130..160}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk6
 
+execute as @e[type=armor_stand,tag=bb_meteor,predicate=!fotn:is_rider] at @s run function fotn:impl/mobs/blazeborn/meteor_detonate
+
 # Elizabeth's attacks
 execute as @e[tag=queen,type=stray,scores={queen_atk=0..5}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/mobs/queen/atk1
 execute as @e[tag=queen,type=stray,scores={queen_atk=30..35}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/mobs/queen/atk2

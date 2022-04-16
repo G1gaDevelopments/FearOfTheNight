@@ -1,6 +1,5 @@
 # Sub-functions for handling more complex stuffs
 function fotn:tick/mob_scan
-execute as @e[nbt={HurtTime:10s}] run function fotn:tick/on_hurt
 function fotn:tick/custom_attacks
 execute as @a[scores={coas=1..}] run function fotn:tick/on_coas
 function fotn:tick/action_bars
@@ -34,6 +33,7 @@ execute as @a run function fotn:on_event/_event_handlers/item_switch_handler
 execute as @a[advancements={fotn:util/on_inventory_change=true}] run function fotn:on_event/_event_handlers/inventory_change_handler
 function fotn:on_event/offhand_switch/offhand_checks
 execute as @e[type=glow_item_frame,tag=advanced_forge] run function fotn:on_event/_event_handlers/advforge_change_handler
+execute as @e[nbt={HurtTime:10s}] run function fotn:tick/on_hurt
 
 # Kills the invisible mounts/riders that alter mob AI
 kill @e[type=husk,tag=angry_bull,predicate=!fotn:is_rider]
