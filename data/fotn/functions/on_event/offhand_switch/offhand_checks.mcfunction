@@ -1,7 +1,7 @@
 # Various commands relating to checking players with items in their offhand
 
 # Queen's Satchel healing.
-execute as @a[scores={offhand_fotn_item=6,qst_cooldown=..0,qst_uses=1..}] run function fotn:impl/queen_bag/consume
+execute as @a[scores={offhand_fotn_item=6,qst_cooldown=..0,qst_uses=1..}] run function fotn:impl/mobs/queen_bag/consume
 execute as @a[scores={offhand_fotn_item=6}] run function fotn:impl/util/swap_offhand
 
 # Tome of Knowledge

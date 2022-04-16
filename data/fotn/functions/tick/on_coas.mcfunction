@@ -12,7 +12,7 @@ execute as @s[scores={held_fotn_item=3,rgs_cooldown=..0}] at @s at @e[type=!#fot
 execute as @s[scores={held_fotn_item=3,rgs_cooldown=..0}] run scoreboard players set @s rgs_cooldown 60
 
 # Queen's Satchel
-execute as @s[scores={held_fotn_item=6,qst_cooldown=..0,qst_totems=1..}] run function fotn:impl/queen_bag/refill
+execute as @s[scores={held_fotn_item=6,qst_cooldown=..0,qst_totems=1..}] run function fotn:impl/mobs/queen_bag/refill
 
 # Egg Launcher
 execute as @s[scores={held_fotn_item=16,egl_cooldown=..0,egl_ammo=5..}] run function fotn:impl/egg_launcher/burst

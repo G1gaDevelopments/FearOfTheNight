@@ -1,27 +1,27 @@
 # BOSSES
 
 # Blazeborn of the Depths' attacks
-execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=0}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk1
-execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=20..40}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk2
-execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=55}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk3
-execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=80}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk4
-execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=100}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk5
-execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=130..160}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/blazeborn/atk6
+execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=0}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk1
+execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=20..40}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk2
+execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=55}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk3
+execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=80}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk4
+execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=100}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk5
+execute as @e[tag=blazeborn,type=wither_skeleton,scores={blazeborn_atk=130..160}] at @s if entity @e[type=player,distance=0..30] run function fotn:impl/mobs/blazeborn/atk6
 
 # Elizabeth's attacks
-execute as @e[tag=queen,type=stray,scores={queen_atk=0..5}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/queen/atk1
-execute as @e[tag=queen,type=stray,scores={queen_atk=30..35}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/queen/atk2
-execute as @e[tag=queen,type=stray,scores={queen_atk=60}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/queen/atk3
-execute as @e[tag=queen,type=stray,scores={queen_atk=100..120}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/queen/atk4
-execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/queen/atk5
+execute as @e[tag=queen,type=stray,scores={queen_atk=0..5}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/mobs/queen/atk1
+execute as @e[tag=queen,type=stray,scores={queen_atk=30..35}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/mobs/queen/atk2
+execute as @e[tag=queen,type=stray,scores={queen_atk=60}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/mobs/queen/atk3
+execute as @e[tag=queen,type=stray,scores={queen_atk=100..120}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/mobs/queen/atk4
+execute as @e[tag=queen,type=stray,scores={queen_atk=160..180}] at @s if entity @e[type=player,distance=0..40] run function fotn:impl/mobs/queen/atk5
 
 # Handles Elizabeth arrows.
 execute as @e[type=arrow,scores={time=30}] as @s at @s run scoreboard players enable @a uuid3b
 
 # Leviathan's attacks
-execute as @e[type=giant,tag=leviathan,scores={levi_atk=0..11}] at @s if entity @e[type=player,distance=0..70] run function fotn:impl/leviathan/atk1
-execute as @e[type=giant,tag=leviathan,scores={levi_atk=100}] at @s if entity @e[type=player,distance=0..70] run function fotn:impl/leviathan/atk2
-execute as @e[type=giant,tag=leviathan,scores={levi_atk=150..180}] at @s if entity @e[type=player,distance=0..70] run function fotn:impl/leviathan/atk3
+execute as @e[type=giant,tag=leviathan,scores={levi_atk=0..11}] at @s if entity @e[type=player,distance=0..70] run function fotn:impl/mobs/leviathan/atk1
+execute as @e[type=giant,tag=leviathan,scores={levi_atk=100}] at @s if entity @e[type=player,distance=0..70] run function fotn:impl/mobs/leviathan/atk2
+execute as @e[type=giant,tag=leviathan,scores={levi_atk=150..180}] at @s if entity @e[type=player,distance=0..70] run function fotn:impl/mobs/leviathan/atk3
 
 # Handles Leviathan airstrikes
 execute as @e[type=armor_stand,tag=lv_airstrike] at @s run particle smoke ~ ~ ~
@@ -32,22 +32,22 @@ execute as @e[type=armor_stand,tag=lv_as_explode] at @s run summon creeper ~ ~ ~
 kill @e[tag=lv_as_explode]
 
 # Egg Lord's attacks
-execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=0..30}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk1
-execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=50}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk2
-execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk3
-execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=120..130}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/egglord/atk4
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=0..30}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/mobs/egglord/atk1
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=50}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/mobs/egglord/atk2
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=70..85}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/mobs/egglord/atk3
+execute as @e[tag=egglord,type=skeleton,scores={egglord_atk=120..130}] at @s if entity @e[type=player,distance=0..140] run function fotn:impl/mobs/egglord/atk4
 
 # Handles Egg Lord absorbing chickens.
-execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] if predicate fotn:rng/chance25 run function fotn:impl/egglord/absorb
+execute as @e[type=chicken] at @s if entity @e[type=skeleton,tag=egglord,distance=0..10,scores={el_asb_cooldown=..0}] if predicate fotn:rng/chance25 run function fotn:impl/mobs/egglord/absorb
 
 # Nocturnus, Monstrosity of the Night's attacks in Phase 2
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=0..20}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk1
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=60..140}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk2
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=160..180}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk3
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=240..290}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk4
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=295..300}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk5
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=340..360}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk6
-execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=370..400}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/nocturnus_phase2/atk7
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=0..20}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/mobs/nocturnus_phase2/atk1
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=60..140}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/mobs/nocturnus_phase2/atk2
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=160..180}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/mobs/nocturnus_phase2/atk3
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=240..290}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/mobs/nocturnus_phase2/atk4
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=295..300}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/mobs/nocturnus_phase2/atk5
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=340..360}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/mobs/nocturnus_phase2/atk6
+execute as @e[type=phantom,tag=nocturnus_phase2,scores={nocturnus_p2_atk=370..400}] at @s if entity @e[type=player,distance=0..300] run function fotn:impl/mobs/nocturnus_phase2/atk7
 
 # Despawns projectiles
 execute as @e[tag=projectile,scores={time=50}] run kill @s
@@ -71,7 +71,7 @@ execute as @e[tag=nt_knight,scores={time=100}] if predicate fotn:rng/chance50 ru
 execute as @e[tag=nt_knight,scores={time=101}] as @s run scoreboard players set @s time 0
 
 # Enchanted Endermen
-execute as @e[tag=ench_enderman,scores={time=199..202}] at @s run function fotn:impl/ench_endermen/atk1
+execute as @e[tag=ench_enderman,scores={time=199..202}] at @s run function fotn:impl/mobs/ench_endermen/atk1
 execute as @e[tag=ench_enderman,scores={time=220}] run scoreboard players set @s time 0
 
 # Enchanted Blaze
@@ -81,14 +81,14 @@ execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] run scoreboard player
 # REINFORCEMENTS
 
 # Handles reinforcements.
-execute as @e[tag=bb_minion,scores={time=200}] as @s run kill @s
-execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run kill @s
-execute as @e[tag=qn_minion,scores={time=200}] as @s run kill @s
+execute as @e[tag=bb_minion,scores={time=200}] as @s run function fotn:impl/util/despawn_mob
+execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run function fotn:impl/util/despawn_mob
+execute as @e[tag=qn_minion,scores={time=200}] as @s run function fotn:impl/util/despawn_mob
 scoreboard players enable @a uuid1b
-execute as @e[tag=eg_mimic,scores={time=300}] as @s run kill @s
-execute as @e[tag=eg_horde,scores={time=140}] as @s run kill @s
-execute as @e[tag=nt2_minion,scores={time=200}] as @s run kill @s
-execute as @e[tag=nt2_mimic,scores={time=175}] as @s run kill @s
+execute as @e[tag=eg_mimic,scores={time=300}] as @s run function fotn:impl/util/despawn_mob
+execute as @e[tag=eg_horde,scores={time=120}] as @s run function fotn:impl/util/despawn_mob
+execute as @e[tag=nt2_minion,scores={time=200}] as @s run function fotn:impl/util/despawn_mob
+execute as @e[tag=nt2_mimic,scores={time=175}] as @s run function fotn:impl/util/despawn_mob
 
 execute as @e[tag=nt2_obbyrain] at @s if predicate fotn:rng/chance50 run summon falling_block ^ ^ ^1 {BlockState:{Name:"minecraft:obsidian"},Time:1,DropItem:0b,FallDistance:10f}
 execute as @e[tag=nt2_obbyrain] at @s if predicate fotn:rng/chance10 run summon falling_block ^ ^1 ^1 {BlockState:{Name:"minecraft:fire"},Time:1,DropItem:0b,FallDistance:10f}

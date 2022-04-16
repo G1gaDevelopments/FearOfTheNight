@@ -9,4 +9,4 @@ execute as @e[type=phantom,tag=nocturnus_phase1] at @s store result score @s nt_
 execute store result bossbar nocturnus_phase1 value as @e[type=phantom,tag=nocturnus_phase1] run scoreboard players get @s nt_remtgts
 
 execute unless entity @e[type=phantom,tag=nocturnus_phase1,scores={nt_remtgts=1..}] run bossbar set nocturnus_phase1 visible false
-execute as @e[type=phantom,tag=nocturnus_phase1,scores={nt_remtgts=..0}] run function fotn:impl/nocturnus_phase1/convert_phase_2
+execute as @e[type=phantom,tag=nocturnus_phase1,scores={nt_remtgts=..0}] run function fotn:impl/mobs/nocturnus_phase1/convert_phase_2

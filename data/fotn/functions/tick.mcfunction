@@ -69,9 +69,9 @@ execute unless entity @e[tag=nocturnus] run gamerule doDaylightCycle true
 execute unless entity @e[tag=queen] run gamerule doDaylightCycle true
 
 # Detects summoning runes/items near summoning altars.
-execute as @e[type=glow_item_frame,tag=bb_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{FotnID:11},Count:1b},OnGround:1b},distance=..2] run function fotn:impl/blazeborn/summon_seq
-execute as @e[type=glow_item_frame,tag=lv_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{FotnID:13},Count:1b},OnGround:1b},distance=..2] run function fotn:impl/leviathan/summon_seq
-execute as @e[type=glow_item_frame,tag=eg_spawner] at @s if entity @e[type=egg,nbt={Item:{id:"minecraft:egg",tag:{FotnID:15}}},distance=..2] if predicate fotn:rng/chance25 run function fotn:impl/egglord/summon_seq
+execute as @e[type=glow_item_frame,tag=bb_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{FotnID:11},Count:1b},OnGround:1b},distance=..2] run function fotn:impl/mobs/blazeborn/summon_seq
+execute as @e[type=glow_item_frame,tag=lv_spawner] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:quartz",tag:{FotnID:13},Count:1b},OnGround:1b},distance=..2] run function fotn:impl/mobs/leviathan/summon_seq
+execute as @e[type=glow_item_frame,tag=eg_spawner] at @s if entity @e[type=egg,nbt={Item:{id:"minecraft:egg",tag:{FotnID:15}}},distance=..2] if predicate fotn:rng/chance25 run function fotn:impl/mobs/egglord/summon_seq
 
 # Counts ammo items in everyones' inventory (for Egg Launcher and Queen's Satchel)
 execute as @a store result score @s egl_ammo run clear @s egg 0

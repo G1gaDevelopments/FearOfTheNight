@@ -1,0 +1,1 @@
+execute as @e[type=!#fotn:tick_despite_nonmob] run function fotn:impl/util/despawn_mob

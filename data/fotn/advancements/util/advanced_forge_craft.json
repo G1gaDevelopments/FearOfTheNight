@@ -9,6 +9,6 @@
         }
     },
     "rewards": {
-        "function": "fotn:impl/cblock/advanced_forge/obtain"
+        "function": "fotn:impl/block/advanced_forge/obtain"
     }
 }
