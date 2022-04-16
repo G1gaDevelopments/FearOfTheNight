@@ -1,0 +1,1 @@
+summon witch ~ ~ ~ {Health:15f,Tags:["nt2_minion"],ActiveEffects:[{Id:11b,Amplifier:2b,Duration:9999},{Id:28b,Amplifier:2b,Duration:9999}],Attributes:[{Name:"generic.max_health",Base:15}]}

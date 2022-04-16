@@ -1,0 +1,1 @@
+summon phantom ~ ~-10 ~ {Health:1f,Tags:["nt2_minion","nt2_obbyrain"],Attributes:[{Name:"generic.max_health",Base:1}]}
