@@ -1,6 +1,7 @@
 Lookup table for various custom items FOTN adds.
 IDs are in format (CustomModelData) | (FotnID)
 
+Implemented:
 (COAS)    6164001 |  1 - Baton of the Blazeborn
 (IRONSWD) 6164002 |  2 - Royal Rapier
 (COAS)    6164003 |  3 - Regal Sceptre
@@ -20,6 +21,8 @@ IDs are in format (CustomModelData) | (FotnID)
 (BOOK)    6164017 | 17 - Tome of Knowledge
 
 Unimplemented:
+
+Untextured:
 (B.PWDR)  6164018 | 18 - Blazeborn Essence [NYI]
 (QUARTZ)  6164019 | 19 - Ender Dragon Scales [NYI]
 (QUARTZ)  6164020 | 20 - Wither Shard [NYI]
