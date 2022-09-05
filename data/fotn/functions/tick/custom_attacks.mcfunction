@@ -73,7 +73,7 @@ execute as @e[tag=nt_knight,scores={time=100}] if predicate fotn:rng/chance50 ru
 execute as @e[tag=nt_knight,scores={time=101}] as @s run scoreboard players set @s time 0
 
 # Enchanted Endermen
-execute as @e[tag=ench_enderman,scores={time=199..202}] at @s run function fotn:impl/mobs/ench_endermen/atk1
+execute as @e[tag=ench_enderman,scores={time=199..202}] at @s run function fotn:impl/mobs/minor/ench_endermen/atk1
 execute as @e[tag=ench_enderman,scores={time=220}] run scoreboard players set @s time 0
 
 # Enchanted Blaze
@@ -82,7 +82,7 @@ execute as @e[type=blaze,tag=ench_blaze,scores={time=100}] run scoreboard player
 
 # REINFORCEMENTS
 
-# Handles reinforcements.
+# Despawns reinforcements.
 execute as @e[tag=bb_minion,scores={time=200}] as @s run function fotn:impl/util/despawn_mob
 execute as @e[tag=ench_endermen_kt,scores={time=400}] as @s run function fotn:impl/util/despawn_mob
 execute as @e[tag=qn_minion,scores={time=200}] as @s run function fotn:impl/util/despawn_mob

@@ -7,6 +7,7 @@ scoreboard objectives add nocturnus_p2_atk dummy
 scoreboard objectives add queen_atk dummy
 scoreboard objectives add levi_atk dummy
 scoreboard objectives add egglord_atk dummy
+scoreboard objectives add attack_timer dummy
 
 scoreboard objectives add coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add botb_cooldown dummy
